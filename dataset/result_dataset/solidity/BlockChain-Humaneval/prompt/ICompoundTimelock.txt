@@ -1,0 +1,3 @@
+Generate smart contract code that meets the following requirements:
+ https://github.com/compound-finance/compound-protocol/blob/master/contracts/Timelock.sol[Compound timelock] interface
+Please give the contract code

@@ -1,0 +1,4 @@
+Generate smart contract code that meets the following requirements:
+ @dev Clock used for flagging checkpoints. Can be overridden to implement timestamp based checkpoints (and voting).
+ @dev Description of the clock
+Please give the contract code

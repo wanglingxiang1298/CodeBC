@@ -1,0 +1,4 @@
+Generate smart contract code that meets the following requirements:
+ @dev ERC-2309: ERC-721 Consecutive Transfer Extension.
+ @dev Emitted when the tokens from `fromTokenId` to `toTokenId` are transferred from `fromAddress` to `toAddress`.
+Please give the contract code

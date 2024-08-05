@@ -1,0 +1,774 @@
+'solc --version' running
+'solc Base64.txt_4.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,D:\wanglingxiang\program_smart_contract\data_test\base_data_split\base_data_split' running
+Compilation warnings/errors on Base64.txt_4.sol:
+Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.
+
+--> Base64.txt_4.sol
+
+
+
+Error: Index access for string is not possible.
+
+  --> Base64.txt_4.sol:23:17:
+
+   |
+
+23 |                 encoded[j++] = b;
+
+   |                 ^^^^^^^^^^^^
+
+
+
+Error: Type uint8 is not implicitly convertible to expected type bytes1.
+
+  --> Base64.txt_4.sol:23:32:
+
+   |
+
+23 |                 encoded[j++] = b;
+
+   |                                ^
+
+
+
+Error: Index access for string is not possible.
+
+  --> Base64.txt_4.sol:25:17:
+
+   |
+
+25 |                 encoded[j++] = b;
+
+   |                 ^^^^^^^^^^^^
+
+
+
+Error: Type uint8 is not implicitly convertible to expected type bytes1.
+
+  --> Base64.txt_4.sol:25:32:
+
+   |
+
+25 |                 encoded[j++] = b;
+
+   |                                ^
+
+
+
+Error: Index access for string is not possible.
+
+  --> Base64.txt_4.sol:26:17:
+
+   |
+
+26 |                 encoded[j++] = b;
+
+   |                 ^^^^^^^^^^^^
+
+
+
+Error: Type uint8 is not implicitly convertible to expected type bytes1.
+
+  --> Base64.txt_4.sol:26:32:
+
+   |
+
+26 |                 encoded[j++] = b;
+
+   |                                ^
+
+
+
+Error: Index access for string is not possible.
+
+  --> Base64.txt_4.sol:28:17:
+
+   |
+
+28 |                 encoded[j++] = b;
+
+   |                 ^^^^^^^^^^^^
+
+
+
+Error: Type uint8 is not implicitly convertible to expected type bytes1.
+
+  --> Base64.txt_4.sol:28:32:
+
+   |
+
+28 |                 encoded[j++] = b;
+
+   |                                ^
+
+
+
+Error: Index access for string is not possible.
+
+  --> Base64.txt_4.sol:29:17:
+
+   |
+
+29 |                 encoded[j++] = b;
+
+   |                 ^^^^^^^^^^^^
+
+
+
+Error: Type uint8 is not implicitly convertible to expected type bytes1.
+
+  --> Base64.txt_4.sol:29:32:
+
+   |
+
+29 |                 encoded[j++] = b;
+
+   |                                ^
+
+
+
+Error: Index access for string is not possible.
+
+  --> Base64.txt_4.sol:30:17:
+
+   |
+
+30 |                 encoded[j++] = b;
+
+   |                 ^^^^^^^^^^^^
+
+
+
+Error: Type uint8 is not implicitly convertible to expected type bytes1.
+
+  --> Base64.txt_4.sol:30:32:
+
+   |
+
+30 |                 encoded[j++] = b;
+
+   |                                ^
+
+
+
+Error: Index access for string is not possible.
+
+  --> Base64.txt_4.sol:32:17:
+
+   |
+
+32 |                 encoded[j++] = b;
+
+   |                 ^^^^^^^^^^^^
+
+
+
+Error: Type uint8 is not implicitly convertible to expected type bytes1.
+
+  --> Base64.txt_4.sol:32:32:
+
+   |
+
+32 |                 encoded[j++] = b;
+
+   |                                ^
+
+
+
+Error: Index access for string is not possible.
+
+  --> Base64.txt_4.sol:33:17:
+
+   |
+
+33 |                 encoded[j++] = b;
+
+   |                 ^^^^^^^^^^^^
+
+
+
+Error: Type uint8 is not implicitly convertible to expected type bytes1.
+
+  --> Base64.txt_4.sol:33:32:
+
+   |
+
+33 |                 encoded[j++] = b;
+
+   |                                ^
+
+
+
+Error: Index access for string is not possible.
+
+  --> Base64.txt_4.sol:34:17:
+
+   |
+
+34 |                 encoded[j++] = b;
+
+   |                 ^^^^^^^^^^^^
+
+
+
+Error: Type uint8 is not implicitly convertible to expected type bytes1.
+
+  --> Base64.txt_4.sol:34:32:
+
+   |
+
+34 |                 encoded[j++] = b;
+
+   |                                ^
+
+
+
+Error: Index access for string is not possible.
+
+  --> Base64.txt_4.sol:35:17:
+
+   |
+
+35 |                 encoded[j++] = b;
+
+   |                 ^^^^^^^^^^^^
+
+
+
+Error: Type uint8 is not implicitly convertible to expected type bytes1.
+
+  --> Base64.txt_4.sol:35:32:
+
+   |
+
+35 |                 encoded[j++] = b;
+
+   |                                ^
+
+
+
+Error: Index access for string is not possible.
+
+  --> Base64.txt_4.sol:37:17:
+
+   |
+
+37 |                 encoded[j++] = b;
+
+   |                 ^^^^^^^^^^^^
+
+
+
+Error: Type uint8 is not implicitly convertible to expected type bytes1.
+
+  --> Base64.txt_4.sol:37:32:
+
+   |
+
+37 |                 encoded[j++] = b;
+
+   |                                ^
+
+
+
+Error: Index access for string is not possible.
+
+  --> Base64.txt_4.sol:38:17:
+
+   |
+
+38 |                 encoded[j++] = b;
+
+   |                 ^^^^^^^^^^^^
+
+
+
+Error: Type uint8 is not implicitly convertible to expected type bytes1.
+
+  --> Base64.txt_4.sol:38:32:
+
+   |
+
+38 |                 encoded[j++] = b;
+
+   |                                ^
+
+
+
+Error: Index access for string is not possible.
+
+  --> Base64.txt_4.sol:39:17:
+
+   |
+
+39 |                 encoded[j++] = b;
+
+   |                 ^^^^^^^^^^^^
+
+
+
+Error: Type uint8 is not implicitly convertible to expected type bytes1.
+
+  --> Base64.txt_4.sol:39:32:
+
+   |
+
+39 |                 encoded[j++] = b;
+
+   |                                ^
+
+
+
+Error: Index access for string is not possible.
+
+  --> Base64.txt_4.sol:40:17:
+
+   |
+
+40 |                 encoded[j++] = b;
+
+   |                 ^^^^^^^^^^^^
+
+
+
+Error: Type uint8 is not implicitly convertible to expected type bytes1.
+
+  --> Base64.txt_4.sol:40:32:
+
+   |
+
+40 |                 encoded[j++] = b;
+
+   |                                ^
+
+
+
+Error: Index access for string is not possible.
+
+  --> Base64.txt_4.sol:41:17:
+
+   |
+
+41 |                 encoded[j++] = b;
+
+   |                 ^^^^^^^^^^^^
+
+
+
+Error: Type uint8 is not implicitly convertible to expected type bytes1.
+
+  --> Base64.txt_4.sol:41:32:
+
+   |
+
+41 |                 encoded[j++] = b;
+
+   |                                ^
+
+
+
+
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\site-packages\crytic_compile\platform\solc.py", line 582, in _run_solc
+    ret: Dict = json.loads(stdout)
+  File "D:\ProgramData\Anaconda3\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "D:\ProgramData\Anaconda3\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\ProgramData\Anaconda3\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "D:\ProgramData\Anaconda3\lib\runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "D:\ProgramData\Anaconda3\Scripts\slither.exe\__main__.py", line 7, in <module>
+  File "D:\ProgramData\Anaconda3\lib\site-packages\slither\__main__.py", line 727, in main
+    main_impl(all_detector_classes=detectors, all_printer_classes=printers)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\slither\__main__.py", line 833, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\slither\__main__.py", line 96, in process_all
+    compilations = compile_all(target, **vars(args))
+  File "D:\ProgramData\Anaconda3\lib\site-packages\crytic_compile\crytic_compile.py", line 718, in compile_all
+    compilations.append(CryticCompile(target, **kwargs))
+  File "D:\ProgramData\Anaconda3\lib\site-packages\crytic_compile\crytic_compile.py", line 207, in __init__
+    self._compile(**kwargs)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\crytic_compile\crytic_compile.py", line 629, in _compile
+    self._platform.compile(self, **kwargs)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\crytic_compile\platform\solc.py", line 151, in compile
+    targets_json = _get_targets_json(compilation_unit, self._target, **kwargs)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\crytic_compile\platform\solc.py", line 280, in _get_targets_json
+    return _run_solc(
+  File "D:\ProgramData\Anaconda3\lib\site-packages\crytic_compile\platform\solc.py", line 586, in _run_solc
+    raise InvalidCompilation(f"Invalid solc compilation {stderr}")
+crytic_compile.platform.exceptions.InvalidCompilation: Invalid solc compilation Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.
+
+--> Base64.txt_4.sol
+
+
+
+Error: Index access for string is not possible.
+
+  --> Base64.txt_4.sol:23:17:
+
+   |
+
+23 |                 encoded[j++] = b;
+
+   |                 ^^^^^^^^^^^^
+
+
+
+Error: Type uint8 is not implicitly convertible to expected type bytes1.
+
+  --> Base64.txt_4.sol:23:32:
+
+   |
+
+23 |                 encoded[j++] = b;
+
+   |                                ^
+
+
+
+Error: Index access for string is not possible.
+
+  --> Base64.txt_4.sol:25:17:
+
+   |
+
+25 |                 encoded[j++] = b;
+
+   |                 ^^^^^^^^^^^^
+
+
+
+Error: Type uint8 is not implicitly convertible to expected type bytes1.
+
+  --> Base64.txt_4.sol:25:32:
+
+   |
+
+25 |                 encoded[j++] = b;
+
+   |                                ^
+
+
+
+Error: Index access for string is not possible.
+
+  --> Base64.txt_4.sol:26:17:
+
+   |
+
+26 |                 encoded[j++] = b;
+
+   |                 ^^^^^^^^^^^^
+
+
+
+Error: Type uint8 is not implicitly convertible to expected type bytes1.
+
+  --> Base64.txt_4.sol:26:32:
+
+   |
+
+26 |                 encoded[j++] = b;
+
+   |                                ^
+
+
+
+Error: Index access for string is not possible.
+
+  --> Base64.txt_4.sol:28:17:
+
+   |
+
+28 |                 encoded[j++] = b;
+
+   |                 ^^^^^^^^^^^^
+
+
+
+Error: Type uint8 is not implicitly convertible to expected type bytes1.
+
+  --> Base64.txt_4.sol:28:32:
+
+   |
+
+28 |                 encoded[j++] = b;
+
+   |                                ^
+
+
+
+Error: Index access for string is not possible.
+
+  --> Base64.txt_4.sol:29:17:
+
+   |
+
+29 |                 encoded[j++] = b;
+
+   |                 ^^^^^^^^^^^^
+
+
+
+Error: Type uint8 is not implicitly convertible to expected type bytes1.
+
+  --> Base64.txt_4.sol:29:32:
+
+   |
+
+29 |                 encoded[j++] = b;
+
+   |                                ^
+
+
+
+Error: Index access for string is not possible.
+
+  --> Base64.txt_4.sol:30:17:
+
+   |
+
+30 |                 encoded[j++] = b;
+
+   |                 ^^^^^^^^^^^^
+
+
+
+Error: Type uint8 is not implicitly convertible to expected type bytes1.
+
+  --> Base64.txt_4.sol:30:32:
+
+   |
+
+30 |                 encoded[j++] = b;
+
+   |                                ^
+
+
+
+Error: Index access for string is not possible.
+
+  --> Base64.txt_4.sol:32:17:
+
+   |
+
+32 |                 encoded[j++] = b;
+
+   |                 ^^^^^^^^^^^^
+
+
+
+Error: Type uint8 is not implicitly convertible to expected type bytes1.
+
+  --> Base64.txt_4.sol:32:32:
+
+   |
+
+32 |                 encoded[j++] = b;
+
+   |                                ^
+
+
+
+Error: Index access for string is not possible.
+
+  --> Base64.txt_4.sol:33:17:
+
+   |
+
+33 |                 encoded[j++] = b;
+
+   |                 ^^^^^^^^^^^^
+
+
+
+Error: Type uint8 is not implicitly convertible to expected type bytes1.
+
+  --> Base64.txt_4.sol:33:32:
+
+   |
+
+33 |                 encoded[j++] = b;
+
+   |                                ^
+
+
+
+Error: Index access for string is not possible.
+
+  --> Base64.txt_4.sol:34:17:
+
+   |
+
+34 |                 encoded[j++] = b;
+
+   |                 ^^^^^^^^^^^^
+
+
+
+Error: Type uint8 is not implicitly convertible to expected type bytes1.
+
+  --> Base64.txt_4.sol:34:32:
+
+   |
+
+34 |                 encoded[j++] = b;
+
+   |                                ^
+
+
+
+Error: Index access for string is not possible.
+
+  --> Base64.txt_4.sol:35:17:
+
+   |
+
+35 |                 encoded[j++] = b;
+
+   |                 ^^^^^^^^^^^^
+
+
+
+Error: Type uint8 is not implicitly convertible to expected type bytes1.
+
+  --> Base64.txt_4.sol:35:32:
+
+   |
+
+35 |                 encoded[j++] = b;
+
+   |                                ^
+
+
+
+Error: Index access for string is not possible.
+
+  --> Base64.txt_4.sol:37:17:
+
+   |
+
+37 |                 encoded[j++] = b;
+
+   |                 ^^^^^^^^^^^^
+
+
+
+Error: Type uint8 is not implicitly convertible to expected type bytes1.
+
+  --> Base64.txt_4.sol:37:32:
+
+   |
+
+37 |                 encoded[j++] = b;
+
+   |                                ^
+
+
+
+Error: Index access for string is not possible.
+
+  --> Base64.txt_4.sol:38:17:
+
+   |
+
+38 |                 encoded[j++] = b;
+
+   |                 ^^^^^^^^^^^^
+
+
+
+Error: Type uint8 is not implicitly convertible to expected type bytes1.
+
+  --> Base64.txt_4.sol:38:32:
+
+   |
+
+38 |                 encoded[j++] = b;
+
+   |                                ^
+
+
+
+Error: Index access for string is not possible.
+
+  --> Base64.txt_4.sol:39:17:
+
+   |
+
+39 |                 encoded[j++] = b;
+
+   |                 ^^^^^^^^^^^^
+
+
+
+Error: Type uint8 is not implicitly convertible to expected type bytes1.
+
+  --> Base64.txt_4.sol:39:32:
+
+   |
+
+39 |                 encoded[j++] = b;
+
+   |                                ^
+
+
+
+Error: Index access for string is not possible.
+
+  --> Base64.txt_4.sol:40:17:
+
+   |
+
+40 |                 encoded[j++] = b;
+
+   |                 ^^^^^^^^^^^^
+
+
+
+Error: Type uint8 is not implicitly convertible to expected type bytes1.
+
+  --> Base64.txt_4.sol:40:32:
+
+   |
+
+40 |                 encoded[j++] = b;
+
+   |                                ^
+
+
+
+Error: Index access for string is not possible.
+
+  --> Base64.txt_4.sol:41:17:
+
+   |
+
+41 |                 encoded[j++] = b;
+
+   |                 ^^^^^^^^^^^^
+
+
+
+Error: Type uint8 is not implicitly convertible to expected type bytes1.
+
+  --> Base64.txt_4.sol:41:32:
+
+   |
+
+41 |                 encoded[j++] = b;
+
+   |                                ^
+
+
+
+

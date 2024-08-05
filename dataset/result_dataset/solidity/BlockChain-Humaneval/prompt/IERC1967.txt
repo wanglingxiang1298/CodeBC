@@ -1,0 +1,6 @@
+Generate smart contract code that meets the following requirements:
+ @dev ERC-1967: Proxy Storage Slots. This interface contains the events defined in the ERC.
+ @dev Emitted when the implementation is upgraded.
+ @dev Emitted when the admin account has changed.
+ @dev Emitted when the beacon is changed.
+Please give the contract code

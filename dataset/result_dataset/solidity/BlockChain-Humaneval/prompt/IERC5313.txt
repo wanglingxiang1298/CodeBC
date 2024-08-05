@@ -1,0 +1,4 @@
+Generate smart contract code that meets the following requirements:
+ @dev Interface for the Light Contract Ownership Standard. A standardized minimal interface required to identify an account that controls a contract
+ @dev Gets the address of the owner.
+Please give the contract code

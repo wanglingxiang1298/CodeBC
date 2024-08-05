@@ -1,0 +1,4 @@
+Generate smart contract code that meets the following requirements:
+ @dev MAY be emitted to signal that the domain could have changed.
+ @dev returns the fields and values that describe the domain separator used by this contract for EIP-712 signature.
+Please give the contract code

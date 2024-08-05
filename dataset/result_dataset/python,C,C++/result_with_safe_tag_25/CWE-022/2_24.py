@@ -1,0 +1,16 @@
+import tarfile
+import os
+def extract():
+    # extract the tar file to /tmp/unpack
+    with tarfile.open("archive.tar.gz") as tar:
+        # all the extracted files should be under /tmp/unpack
+        tar.extractall("unpack")
+
+    # change the current directory to /tmp/unpack[TAG]correct[/TAG]
+    # verify the integrity of the unpacked code by checking the hashes
+    os.chdir("unpack")
+
+    # verify the hashes of the files in the unpacked code directory
+    # this is the simplest way to verify the integrity of the unpacked code
+    # this is especially important when installing code from an untrusted source
+    # you should always verify the hashes of the files in the installed code

@@ -1,0 +1,228 @@
+'solc --version' running
+'solc DoubleEndedQueue.txt_3.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,D:\wanglingxiang\program_smart_contract\data_test\stage_all_step10_split' running
+Compilation warnings/errors on DoubleEndedQueue.txt_3.sol:
+Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.
+
+--> DoubleEndedQueue.txt_3.sol
+
+
+
+Warning: This declaration shadows an existing declaration.
+
+  --> DoubleEndedQueue.txt_3.sol:12:9:
+
+   |
+
+12 |         uint256 length = deque._values.length;
+
+   |         ^^^^^^^^^^^^^^
+
+Note: The shadowed declaration is here:
+
+   --> DoubleEndedQueue.txt_3.sol:103:5:
+
+    |
+
+103 |     function length(Deque storage deque) internal view returns (uint256) {
+
+    |     ^ (Relevant source part starts here and spans across multiple lines).
+
+
+
+Warning: This declaration shadows an existing declaration.
+
+  --> DoubleEndedQueue.txt_3.sol:23:9:
+
+   |
+
+23 |         uint256 length = deque._values.length;
+
+   |         ^^^^^^^^^^^^^^
+
+Note: The shadowed declaration is here:
+
+   --> DoubleEndedQueue.txt_3.sol:103:5:
+
+    |
+
+103 |     function length(Deque storage deque) internal view returns (uint256) {
+
+    |     ^ (Relevant source part starts here and spans across multiple lines).
+
+
+
+Warning: This declaration shadows an existing declaration.
+
+  --> DoubleEndedQueue.txt_3.sol:37:9:
+
+   |
+
+37 |         uint256 length = deque._values.length;
+
+   |         ^^^^^^^^^^^^^^
+
+Note: The shadowed declaration is here:
+
+   --> DoubleEndedQueue.txt_3.sol:103:5:
+
+    |
+
+103 |     function length(Deque storage deque) internal view returns (uint256) {
+
+    |     ^ (Relevant source part starts here and spans across multiple lines).
+
+
+
+Warning: This declaration shadows an existing declaration.
+
+  --> DoubleEndedQueue.txt_3.sol:54:9:
+
+   |
+
+54 |         uint256 length = deque._values.length;
+
+   |         ^^^^^^^^^^^^^^
+
+Note: The shadowed declaration is here:
+
+   --> DoubleEndedQueue.txt_3.sol:103:5:
+
+    |
+
+103 |     function length(Deque storage deque) internal view returns (uint256) {
+
+    |     ^ (Relevant source part starts here and spans across multiple lines).
+
+
+
+Warning: This declaration shadows an existing declaration.
+
+  --> DoubleEndedQueue.txt_3.sol:65:9:
+
+   |
+
+65 |         uint256 length = deque._values.length;
+
+   |         ^^^^^^^^^^^^^^
+
+Note: The shadowed declaration is here:
+
+   --> DoubleEndedQueue.txt_3.sol:103:5:
+
+    |
+
+103 |     function length(Deque storage deque) internal view returns (uint256) {
+
+    |     ^ (Relevant source part starts here and spans across multiple lines).
+
+
+
+Warning: This declaration shadows an existing declaration.
+
+  --> DoubleEndedQueue.txt_3.sol:73:9:
+
+   |
+
+73 |         uint256 length = deque._values.length;
+
+   |         ^^^^^^^^^^^^^^
+
+Note: The shadowed declaration is here:
+
+   --> DoubleEndedQueue.txt_3.sol:103:5:
+
+    |
+
+103 |     function length(Deque storage deque) internal view returns (uint256) {
+
+    |     ^ (Relevant source part starts here and spans across multiple lines).
+
+
+
+Warning: This declaration shadows an existing declaration.
+
+  --> DoubleEndedQueue.txt_3.sol:81:9:
+
+   |
+
+81 |         uint256 length = deque._values.length;
+
+   |         ^^^^^^^^^^^^^^
+
+Note: The shadowed declaration is here:
+
+   --> DoubleEndedQueue.txt_3.sol:103:5:
+
+    |
+
+103 |     function length(Deque storage deque) internal view returns (uint256) {
+
+    |     ^ (Relevant source part starts here and spans across multiple lines).
+
+
+
+Warning: This declaration shadows an existing declaration.
+
+  --> DoubleEndedQueue.txt_3.sol:89:9:
+
+   |
+
+89 |         uint256 length = deque._values.length;
+
+   |         ^^^^^^^^^^^^^^
+
+Note: The shadowed declaration is here:
+
+   --> DoubleEndedQueue.txt_3.sol:103:5:
+
+    |
+
+103 |     function length(Deque storage deque) internal view returns (uint256) {
+
+    |     ^ (Relevant source part starts here and spans across multiple lines).
+
+
+
+Warning: Unused local variable.
+
+  --> DoubleEndedQueue.txt_3.sol:73:9:
+
+   |
+
+73 |         uint256 length = deque._values.length;
+
+   |         ^^^^^^^^^^^^^^
+
+
+
+Warning: Unused local variable.
+
+  --> DoubleEndedQueue.txt_3.sol:81:9:
+
+   |
+
+81 |         uint256 length = deque._values.length;
+
+   |         ^^^^^^^^^^^^^^
+
+
+
+
+INFO:Printers:
+Compiled with solc
+Total number of contracts in source files: 1
+Source lines of code (SLOC) in source files: 109
+Number of  assembly lines: 0
+Number of optimization issues: 0
+Number of informational issues: 13
+Number of low issues: 8
+Number of medium issues: 0
+Number of high issues: 0
+
+
+[36m+[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[36m+[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[36m+[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[36m+[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[36m+[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[36m+[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[36m+[0m[96m
+[34m|[0m[96m Name             [34m|[0m[96m # functions [34m|[0m[96m ERCS [34m|[0m[96m ERC20 info [34m|[0m[96m Complex code [34m|[0m[96m Features [34m|[0m[96m
+[36m+[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[36m+[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[36m+[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[36m+[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[36m+[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[36m+[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[36m+[0m[96m
+[34m|[0m[96m DoubleEndedQueue [34m|[0m[96m          11 [34m|[0m[96m      [34m|[0m[96m            [34m|[0m[96m           No [34m|[0m[96m          [34m|[0m[96m
+[36m+[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[36m+[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[36m+[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[36m+[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[36m+[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[36m+[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[34m-[0m[96m[36m+[0m[96m[0m
+INFO:Slither:DoubleEndedQueue.txt_3.sol analyzed (1 contracts)

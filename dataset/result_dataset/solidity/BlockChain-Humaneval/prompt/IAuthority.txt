@@ -1,0 +1,4 @@
+Generate smart contract code that meets the following requirements:
+ @dev Standard interface for permissioning originally defined in Dappsys.
+ @dev Returns true if the caller can invoke on a target the function identified by a function selector.
+Please give the contract code

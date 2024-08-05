@@ -1,0 +1,1922 @@
+'solc --version' running
+'solc DoubleEndedQueue.txt_1.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,D:\wanglingxiang\program_smart_contract\data_test\other_model\codegen25_7b_instruct_result_split' running
+Compilation warnings/errors on DoubleEndedQueue.txt_1.sol:
+Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.
+
+--> DoubleEndedQueue.txt_1.sol
+
+
+
+Error: Functions are not allowed to have the same name as the contract. If you intend this to be a constructor, use "constructor(...) { ... }" to define it.
+
+  --> DoubleEndedQueue.txt_1.sol:17:5:
+
+   |
+
+17 |     function DoubleEndedQueue() {
+
+   |     ^ (Relevant source part starts here and spans across multiple lines).
+
+
+
+Error: No visibility specified. Did you intend to add "public"?
+
+  --> DoubleEndedQueue.txt_1.sol:17:5:
+
+   |
+
+17 |     function DoubleEndedQueue() {
+
+   |     ^ (Relevant source part starts here and spans across multiple lines).
+
+
+
+Warning: This declaration shadows an existing declaration.
+
+  --> DoubleEndedQueue.txt_1.sol:17:5:
+
+   |
+
+17 |     function DoubleEndedQueue() {
+
+   |     ^ (Relevant source part starts here and spans across multiple lines).
+
+Note: The shadowed declaration is here:
+
+ --> DoubleEndedQueue.txt_1.sol:2:1:
+
+  |
+
+2 | library DoubleEndedQueue {
+
+  | ^ (Relevant source part starts here and spans across multiple lines).
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:14:31:
+
+   |
+
+14 |         require(msg.sender == owner, "Only the owner can perform this operation");
+
+   |                               ^^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:18:9:
+
+   |
+
+18 |         head = 0;
+
+   |         ^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "this"?
+
+  --> DoubleEndedQueue.txt_1.sol:19:9:
+
+   |
+
+19 |         tail = 0;
+
+   |         ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:20:9:
+
+   |
+
+20 |         size = 0;
+
+   |         ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:21:9:
+
+   |
+
+21 |         isFull = false;
+
+   |         ^^^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:24:17:
+
+   |
+
+24 |         require(size < MAX_SIZE, "Queue is full");
+
+   |                 ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:25:9:
+
+   |
+
+25 |         data[tail] = value;
+
+   |         ^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "this"?
+
+  --> DoubleEndedQueue.txt_1.sol:25:14:
+
+   |
+
+25 |         data[tail] = value;
+
+   |              ^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "this"?
+
+  --> DoubleEndedQueue.txt_1.sol:26:9:
+
+   |
+
+26 |         tail = (tail + 1) % MAX_SIZE;
+
+   |         ^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "this"?
+
+  --> DoubleEndedQueue.txt_1.sol:26:17:
+
+   |
+
+26 |         tail = (tail + 1) % MAX_SIZE;
+
+   |                 ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:27:9:
+
+   |
+
+27 |         size++;
+
+   |         ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:28:20:
+
+   |
+
+28 |         emit Queue(data, head, tail, size, isFull);
+
+   |                    ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:28:26:
+
+   |
+
+28 |         emit Queue(data, head, tail, size, isFull);
+
+   |                          ^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "this"?
+
+  --> DoubleEndedQueue.txt_1.sol:28:32:
+
+   |
+
+28 |         emit Queue(data, head, tail, size, isFull);
+
+   |                                ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:28:38:
+
+   |
+
+28 |         emit Queue(data, head, tail, size, isFull);
+
+   |                                      ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:28:44:
+
+   |
+
+28 |         emit Queue(data, head, tail, size, isFull);
+
+   |                                            ^^^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:31:17:
+
+   |
+
+31 |         require(size > 0, "Queue is empty");
+
+   |                 ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:32:33:
+
+   |
+
+32 |         bytes32 memory result = data[head];
+
+   |                                 ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:32:38:
+
+   |
+
+32 |         bytes32 memory result = data[head];
+
+   |                                      ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:33:9:
+
+   |
+
+33 |         data[head] = 0x0000000000000000000000000000000000000000000000000000000000000000;
+
+   |         ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:33:14:
+
+   |
+
+33 |         data[head] = 0x0000000000000000000000000000000000000000000000000000000000000000;
+
+   |              ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:34:9:
+
+   |
+
+34 |         head = (head + 1) % MAX_SIZE;
+
+   |         ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:34:17:
+
+   |
+
+34 |         head = (head + 1) % MAX_SIZE;
+
+   |                 ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:35:9:
+
+   |
+
+35 |         size--;
+
+   |         ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:36:20:
+
+   |
+
+36 |         emit Queue(data, head, tail, size, isFull);
+
+   |                    ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:36:26:
+
+   |
+
+36 |         emit Queue(data, head, tail, size, isFull);
+
+   |                          ^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "this"?
+
+  --> DoubleEndedQueue.txt_1.sol:36:32:
+
+   |
+
+36 |         emit Queue(data, head, tail, size, isFull);
+
+   |                                ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:36:38:
+
+   |
+
+36 |         emit Queue(data, head, tail, size, isFull);
+
+   |                                      ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:36:44:
+
+   |
+
+36 |         emit Queue(data, head, tail, size, isFull);
+
+   |                                            ^^^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:40:17:
+
+   |
+
+40 |         require(size < MAX_SIZE, "Queue is full");
+
+   |                 ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:41:9:
+
+   |
+
+41 |         data[head] = value;
+
+   |         ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:41:14:
+
+   |
+
+41 |         data[head] = value;
+
+   |              ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:42:9:
+
+   |
+
+42 |         head = (head - 1 + MAX_SIZE) % MAX_SIZE;
+
+   |         ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:42:17:
+
+   |
+
+42 |         head = (head - 1 + MAX_SIZE) % MAX_SIZE;
+
+   |                 ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:43:9:
+
+   |
+
+43 |         size++;
+
+   |         ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:44:20:
+
+   |
+
+44 |         emit Queue(data, head, tail, size, isFull);
+
+   |                    ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:44:26:
+
+   |
+
+44 |         emit Queue(data, head, tail, size, isFull);
+
+   |                          ^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "this"?
+
+  --> DoubleEndedQueue.txt_1.sol:44:32:
+
+   |
+
+44 |         emit Queue(data, head, tail, size, isFull);
+
+   |                                ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:44:38:
+
+   |
+
+44 |         emit Queue(data, head, tail, size, isFull);
+
+   |                                      ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:44:44:
+
+   |
+
+44 |         emit Queue(data, head, tail, size, isFull);
+
+   |                                            ^^^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:47:17:
+
+   |
+
+47 |         require(size > 0, "Queue is empty");
+
+   |                 ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:48:33:
+
+   |
+
+48 |         bytes32 memory result = data[tail];
+
+   |                                 ^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "this"?
+
+  --> DoubleEndedQueue.txt_1.sol:48:38:
+
+   |
+
+48 |         bytes32 memory result = data[tail];
+
+   |                                      ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:49:9:
+
+   |
+
+49 |         data[tail] = 0x0000000000000000000000000000000000000000000000000000000000000000;
+
+   |         ^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "this"?
+
+  --> DoubleEndedQueue.txt_1.sol:49:14:
+
+   |
+
+49 |         data[tail] = 0x0000000000000000000000000000000000000000000000000000000000000000;
+
+   |              ^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "this"?
+
+  --> DoubleEndedQueue.txt_1.sol:50:9:
+
+   |
+
+50 |         tail = (tail - 1 + MAX_SIZE) % MAX_SIZE;
+
+   |         ^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "this"?
+
+  --> DoubleEndedQueue.txt_1.sol:50:17:
+
+   |
+
+50 |         tail = (tail - 1 + MAX_SIZE) % MAX_SIZE;
+
+   |                 ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:51:9:
+
+   |
+
+51 |         size--;
+
+   |         ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:52:20:
+
+   |
+
+52 |         emit Queue(data, head, tail, size, isFull);
+
+   |                    ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:52:26:
+
+   |
+
+52 |         emit Queue(data, head, tail, size, isFull);
+
+   |                          ^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "this"?
+
+  --> DoubleEndedQueue.txt_1.sol:52:32:
+
+   |
+
+52 |         emit Queue(data, head, tail, size, isFull);
+
+   |                                ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:52:38:
+
+   |
+
+52 |         emit Queue(data, head, tail, size, isFull);
+
+   |                                      ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:52:44:
+
+   |
+
+52 |         emit Queue(data, head, tail, size, isFull);
+
+   |                                            ^^^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:56:17:
+
+   |
+
+56 |         require(size > 0, "Queue is empty");
+
+   |                 ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:57:16:
+
+   |
+
+57 |         return data[head];
+
+   |                ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:57:21:
+
+   |
+
+57 |         return data[head];
+
+   |                     ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:60:17:
+
+   |
+
+60 |         require(size > 0, "Queue is empty");
+
+   |                 ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:61:16:
+
+   |
+
+61 |         return data[tail];
+
+   |                ^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "this"?
+
+  --> DoubleEndedQueue.txt_1.sol:61:21:
+
+   |
+
+61 |         return data[tail];
+
+   |                     ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:64:17:
+
+   |
+
+64 |         require(size > 0, "Queue is empty");
+
+   |                 ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:65:39:
+
+   |
+
+65 |         require(index >= 0 && index < size, "Index out of bounds");
+
+   |                                       ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:66:16:
+
+   |
+
+66 |         return data[(head + index) % MAX_SIZE];
+
+   |                ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:66:22:
+
+   |
+
+66 |         return data[(head + index) % MAX_SIZE];
+
+   |                      ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:69:9:
+
+   |
+
+69 |         head = 0;
+
+   |         ^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "this"?
+
+  --> DoubleEndedQueue.txt_1.sol:70:9:
+
+   |
+
+70 |         tail = 0;
+
+   |         ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:71:9:
+
+   |
+
+71 |         size = 0;
+
+   |         ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:72:9:
+
+   |
+
+72 |         isFull = false;
+
+   |         ^^^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:73:20:
+
+   |
+
+73 |         emit Queue(data, head, tail, size, isFull);
+
+   |                    ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:73:26:
+
+   |
+
+73 |         emit Queue(data, head, tail, size, isFull);
+
+   |                          ^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "this"?
+
+  --> DoubleEndedQueue.txt_1.sol:73:32:
+
+   |
+
+73 |         emit Queue(data, head, tail, size, isFull);
+
+   |                                ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:73:38:
+
+   |
+
+73 |         emit Queue(data, head, tail, size, isFull);
+
+   |                                      ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:73:44:
+
+   |
+
+73 |         emit Queue(data, head, tail, size, isFull);
+
+   |                                            ^^^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:76:16:
+
+   |
+
+76 |         return size;
+
+   |                ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:79:16:
+
+   |
+
+79 |         return size == 0;
+
+   |                ^^^^
+
+
+
+
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\site-packages\crytic_compile\platform\solc.py", line 582, in _run_solc
+    ret: Dict = json.loads(stdout)
+  File "D:\ProgramData\Anaconda3\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "D:\ProgramData\Anaconda3\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\ProgramData\Anaconda3\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "D:\ProgramData\Anaconda3\lib\runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "D:\ProgramData\Anaconda3\Scripts\slither.exe\__main__.py", line 7, in <module>
+  File "D:\ProgramData\Anaconda3\lib\site-packages\slither\__main__.py", line 727, in main
+    main_impl(all_detector_classes=detectors, all_printer_classes=printers)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\slither\__main__.py", line 833, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\slither\__main__.py", line 96, in process_all
+    compilations = compile_all(target, **vars(args))
+  File "D:\ProgramData\Anaconda3\lib\site-packages\crytic_compile\crytic_compile.py", line 718, in compile_all
+    compilations.append(CryticCompile(target, **kwargs))
+  File "D:\ProgramData\Anaconda3\lib\site-packages\crytic_compile\crytic_compile.py", line 207, in __init__
+    self._compile(**kwargs)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\crytic_compile\crytic_compile.py", line 629, in _compile
+    self._platform.compile(self, **kwargs)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\crytic_compile\platform\solc.py", line 151, in compile
+    targets_json = _get_targets_json(compilation_unit, self._target, **kwargs)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\crytic_compile\platform\solc.py", line 280, in _get_targets_json
+    return _run_solc(
+  File "D:\ProgramData\Anaconda3\lib\site-packages\crytic_compile\platform\solc.py", line 586, in _run_solc
+    raise InvalidCompilation(f"Invalid solc compilation {stderr}")
+crytic_compile.platform.exceptions.InvalidCompilation: Invalid solc compilation Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.
+
+--> DoubleEndedQueue.txt_1.sol
+
+
+
+Error: Functions are not allowed to have the same name as the contract. If you intend this to be a constructor, use "constructor(...) { ... }" to define it.
+
+  --> DoubleEndedQueue.txt_1.sol:17:5:
+
+   |
+
+17 |     function DoubleEndedQueue() {
+
+   |     ^ (Relevant source part starts here and spans across multiple lines).
+
+
+
+Error: No visibility specified. Did you intend to add "public"?
+
+  --> DoubleEndedQueue.txt_1.sol:17:5:
+
+   |
+
+17 |     function DoubleEndedQueue() {
+
+   |     ^ (Relevant source part starts here and spans across multiple lines).
+
+
+
+Warning: This declaration shadows an existing declaration.
+
+  --> DoubleEndedQueue.txt_1.sol:17:5:
+
+   |
+
+17 |     function DoubleEndedQueue() {
+
+   |     ^ (Relevant source part starts here and spans across multiple lines).
+
+Note: The shadowed declaration is here:
+
+ --> DoubleEndedQueue.txt_1.sol:2:1:
+
+  |
+
+2 | library DoubleEndedQueue {
+
+  | ^ (Relevant source part starts here and spans across multiple lines).
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:14:31:
+
+   |
+
+14 |         require(msg.sender == owner, "Only the owner can perform this operation");
+
+   |                               ^^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:18:9:
+
+   |
+
+18 |         head = 0;
+
+   |         ^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "this"?
+
+  --> DoubleEndedQueue.txt_1.sol:19:9:
+
+   |
+
+19 |         tail = 0;
+
+   |         ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:20:9:
+
+   |
+
+20 |         size = 0;
+
+   |         ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:21:9:
+
+   |
+
+21 |         isFull = false;
+
+   |         ^^^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:24:17:
+
+   |
+
+24 |         require(size < MAX_SIZE, "Queue is full");
+
+   |                 ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:25:9:
+
+   |
+
+25 |         data[tail] = value;
+
+   |         ^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "this"?
+
+  --> DoubleEndedQueue.txt_1.sol:25:14:
+
+   |
+
+25 |         data[tail] = value;
+
+   |              ^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "this"?
+
+  --> DoubleEndedQueue.txt_1.sol:26:9:
+
+   |
+
+26 |         tail = (tail + 1) % MAX_SIZE;
+
+   |         ^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "this"?
+
+  --> DoubleEndedQueue.txt_1.sol:26:17:
+
+   |
+
+26 |         tail = (tail + 1) % MAX_SIZE;
+
+   |                 ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:27:9:
+
+   |
+
+27 |         size++;
+
+   |         ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:28:20:
+
+   |
+
+28 |         emit Queue(data, head, tail, size, isFull);
+
+   |                    ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:28:26:
+
+   |
+
+28 |         emit Queue(data, head, tail, size, isFull);
+
+   |                          ^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "this"?
+
+  --> DoubleEndedQueue.txt_1.sol:28:32:
+
+   |
+
+28 |         emit Queue(data, head, tail, size, isFull);
+
+   |                                ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:28:38:
+
+   |
+
+28 |         emit Queue(data, head, tail, size, isFull);
+
+   |                                      ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:28:44:
+
+   |
+
+28 |         emit Queue(data, head, tail, size, isFull);
+
+   |                                            ^^^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:31:17:
+
+   |
+
+31 |         require(size > 0, "Queue is empty");
+
+   |                 ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:32:33:
+
+   |
+
+32 |         bytes32 memory result = data[head];
+
+   |                                 ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:32:38:
+
+   |
+
+32 |         bytes32 memory result = data[head];
+
+   |                                      ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:33:9:
+
+   |
+
+33 |         data[head] = 0x0000000000000000000000000000000000000000000000000000000000000000;
+
+   |         ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:33:14:
+
+   |
+
+33 |         data[head] = 0x0000000000000000000000000000000000000000000000000000000000000000;
+
+   |              ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:34:9:
+
+   |
+
+34 |         head = (head + 1) % MAX_SIZE;
+
+   |         ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:34:17:
+
+   |
+
+34 |         head = (head + 1) % MAX_SIZE;
+
+   |                 ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:35:9:
+
+   |
+
+35 |         size--;
+
+   |         ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:36:20:
+
+   |
+
+36 |         emit Queue(data, head, tail, size, isFull);
+
+   |                    ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:36:26:
+
+   |
+
+36 |         emit Queue(data, head, tail, size, isFull);
+
+   |                          ^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "this"?
+
+  --> DoubleEndedQueue.txt_1.sol:36:32:
+
+   |
+
+36 |         emit Queue(data, head, tail, size, isFull);
+
+   |                                ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:36:38:
+
+   |
+
+36 |         emit Queue(data, head, tail, size, isFull);
+
+   |                                      ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:36:44:
+
+   |
+
+36 |         emit Queue(data, head, tail, size, isFull);
+
+   |                                            ^^^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:40:17:
+
+   |
+
+40 |         require(size < MAX_SIZE, "Queue is full");
+
+   |                 ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:41:9:
+
+   |
+
+41 |         data[head] = value;
+
+   |         ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:41:14:
+
+   |
+
+41 |         data[head] = value;
+
+   |              ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:42:9:
+
+   |
+
+42 |         head = (head - 1 + MAX_SIZE) % MAX_SIZE;
+
+   |         ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:42:17:
+
+   |
+
+42 |         head = (head - 1 + MAX_SIZE) % MAX_SIZE;
+
+   |                 ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:43:9:
+
+   |
+
+43 |         size++;
+
+   |         ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:44:20:
+
+   |
+
+44 |         emit Queue(data, head, tail, size, isFull);
+
+   |                    ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:44:26:
+
+   |
+
+44 |         emit Queue(data, head, tail, size, isFull);
+
+   |                          ^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "this"?
+
+  --> DoubleEndedQueue.txt_1.sol:44:32:
+
+   |
+
+44 |         emit Queue(data, head, tail, size, isFull);
+
+   |                                ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:44:38:
+
+   |
+
+44 |         emit Queue(data, head, tail, size, isFull);
+
+   |                                      ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:44:44:
+
+   |
+
+44 |         emit Queue(data, head, tail, size, isFull);
+
+   |                                            ^^^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:47:17:
+
+   |
+
+47 |         require(size > 0, "Queue is empty");
+
+   |                 ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:48:33:
+
+   |
+
+48 |         bytes32 memory result = data[tail];
+
+   |                                 ^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "this"?
+
+  --> DoubleEndedQueue.txt_1.sol:48:38:
+
+   |
+
+48 |         bytes32 memory result = data[tail];
+
+   |                                      ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:49:9:
+
+   |
+
+49 |         data[tail] = 0x0000000000000000000000000000000000000000000000000000000000000000;
+
+   |         ^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "this"?
+
+  --> DoubleEndedQueue.txt_1.sol:49:14:
+
+   |
+
+49 |         data[tail] = 0x0000000000000000000000000000000000000000000000000000000000000000;
+
+   |              ^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "this"?
+
+  --> DoubleEndedQueue.txt_1.sol:50:9:
+
+   |
+
+50 |         tail = (tail - 1 + MAX_SIZE) % MAX_SIZE;
+
+   |         ^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "this"?
+
+  --> DoubleEndedQueue.txt_1.sol:50:17:
+
+   |
+
+50 |         tail = (tail - 1 + MAX_SIZE) % MAX_SIZE;
+
+   |                 ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:51:9:
+
+   |
+
+51 |         size--;
+
+   |         ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:52:20:
+
+   |
+
+52 |         emit Queue(data, head, tail, size, isFull);
+
+   |                    ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:52:26:
+
+   |
+
+52 |         emit Queue(data, head, tail, size, isFull);
+
+   |                          ^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "this"?
+
+  --> DoubleEndedQueue.txt_1.sol:52:32:
+
+   |
+
+52 |         emit Queue(data, head, tail, size, isFull);
+
+   |                                ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:52:38:
+
+   |
+
+52 |         emit Queue(data, head, tail, size, isFull);
+
+   |                                      ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:52:44:
+
+   |
+
+52 |         emit Queue(data, head, tail, size, isFull);
+
+   |                                            ^^^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:56:17:
+
+   |
+
+56 |         require(size > 0, "Queue is empty");
+
+   |                 ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:57:16:
+
+   |
+
+57 |         return data[head];
+
+   |                ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:57:21:
+
+   |
+
+57 |         return data[head];
+
+   |                     ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:60:17:
+
+   |
+
+60 |         require(size > 0, "Queue is empty");
+
+   |                 ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:61:16:
+
+   |
+
+61 |         return data[tail];
+
+   |                ^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "this"?
+
+  --> DoubleEndedQueue.txt_1.sol:61:21:
+
+   |
+
+61 |         return data[tail];
+
+   |                     ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:64:17:
+
+   |
+
+64 |         require(size > 0, "Queue is empty");
+
+   |                 ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:65:39:
+
+   |
+
+65 |         require(index >= 0 && index < size, "Index out of bounds");
+
+   |                                       ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:66:16:
+
+   |
+
+66 |         return data[(head + index) % MAX_SIZE];
+
+   |                ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:66:22:
+
+   |
+
+66 |         return data[(head + index) % MAX_SIZE];
+
+   |                      ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:69:9:
+
+   |
+
+69 |         head = 0;
+
+   |         ^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "this"?
+
+  --> DoubleEndedQueue.txt_1.sol:70:9:
+
+   |
+
+70 |         tail = 0;
+
+   |         ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:71:9:
+
+   |
+
+71 |         size = 0;
+
+   |         ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:72:9:
+
+   |
+
+72 |         isFull = false;
+
+   |         ^^^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:73:20:
+
+   |
+
+73 |         emit Queue(data, head, tail, size, isFull);
+
+   |                    ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:73:26:
+
+   |
+
+73 |         emit Queue(data, head, tail, size, isFull);
+
+   |                          ^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "this"?
+
+  --> DoubleEndedQueue.txt_1.sol:73:32:
+
+   |
+
+73 |         emit Queue(data, head, tail, size, isFull);
+
+   |                                ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:73:38:
+
+   |
+
+73 |         emit Queue(data, head, tail, size, isFull);
+
+   |                                      ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:73:44:
+
+   |
+
+73 |         emit Queue(data, head, tail, size, isFull);
+
+   |                                            ^^^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:76:16:
+
+   |
+
+76 |         return size;
+
+   |                ^^^^
+
+
+
+Error: Undeclared identifier.
+
+  --> DoubleEndedQueue.txt_1.sol:79:16:
+
+   |
+
+79 |         return size == 0;
+
+   |                ^^^^
+
+
+
+

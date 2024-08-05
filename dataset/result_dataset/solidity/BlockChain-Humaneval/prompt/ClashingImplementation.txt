@@ -1,0 +1,3 @@
+Generate smart contract code that meets the following requirements:
+ @dev Implementation contract with a payable changeAdmin(address) function made to clash with TransparentUpgradeableProxy's to test correct functioning of the Transparent Proxy feature.
+Please give the contract code

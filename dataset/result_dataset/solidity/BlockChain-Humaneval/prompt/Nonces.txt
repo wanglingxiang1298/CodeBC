@@ -1,0 +1,7 @@
+Generate smart contract code that meets the following requirements:
+ @dev Provides tracking nonces for addresses. Nonces will only increment.
+ @dev The nonce used for an `account` is not the expected current nonce.
+ @dev Returns the next unused nonce for an address.
+ @dev Consumes a nonce. Returns the current value and increments nonce.
+ @dev Same as {_useNonce} but checking that `nonce` is the next valid for `owner`.
+Please give the contract code

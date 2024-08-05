@@ -1,0 +1,558 @@
+'solc --version' running
+'solc StorageSlot.txt_2.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,D:\wanglingxiang\program_smart_contract\data_test\other_model\codegen25_7b_instruct_result_split' running
+Compilation warnings/errors on StorageSlot.txt_2.sol:
+Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.
+
+--> StorageSlot.txt_2.sol
+
+
+
+Error: Free functions cannot have visibility.
+
+  --> StorageSlot.txt_2.sol:40:1:
+
+   |
+
+40 | function getAddressSlot(uint256 slot) public view returns (address) {
+
+   | ^ (Relevant source part starts here and spans across multiple lines).
+
+
+
+Error: Free functions cannot have visibility.
+
+  --> StorageSlot.txt_2.sol:43:1:
+
+   |
+
+43 | function getBooleanSlot(uint256 slot) public view returns (bool) {
+
+   | ^ (Relevant source part starts here and spans across multiple lines).
+
+
+
+Error: Free functions cannot have visibility.
+
+  --> StorageSlot.txt_2.sol:46:1:
+
+   |
+
+46 | function getBytes32Slot(uint256 slot) public view returns (bytes32) {
+
+   | ^ (Relevant source part starts here and spans across multiple lines).
+
+
+
+Error: Free functions cannot have visibility.
+
+  --> StorageSlot.txt_2.sol:49:1:
+
+   |
+
+49 | function getUint256Slot(uint256 slot) public view returns (uint256) {
+
+   | ^ (Relevant source part starts here and spans across multiple lines).
+
+
+
+Error: Free functions cannot have visibility.
+
+  --> StorageSlot.txt_2.sol:52:1:
+
+   |
+
+52 | function getStringSlot(uint256 slot) public view returns (string) {
+
+   | ^ (Relevant source part starts here and spans across multiple lines).
+
+
+
+Error: Free functions cannot have visibility.
+
+  --> StorageSlot.txt_2.sol:55:1:
+
+   |
+
+55 | function getBytesSlot(uint256 slot) public view returns (bytes) {
+
+   | ^ (Relevant source part starts here and spans across multiple lines).
+
+
+
+Warning: This declaration shadows an existing declaration.
+
+ --> StorageSlot.txt_2.sol:3:5:
+
+  |
+
+3 |     function getAddressSlot(uint256 slot) internal view returns (address) {
+
+  |     ^ (Relevant source part starts here and spans across multiple lines).
+
+Note: The shadowed declaration is here:
+
+  --> StorageSlot.txt_2.sol:40:1:
+
+   |
+
+40 | function getAddressSlot(uint256 slot) public view returns (address) {
+
+   | ^ (Relevant source part starts here and spans across multiple lines).
+
+
+
+Warning: This declaration shadows an existing declaration.
+
+ --> StorageSlot.txt_2.sol:6:5:
+
+  |
+
+6 |     function getBooleanSlot(uint256 slot) internal view returns (bool) {
+
+  |     ^ (Relevant source part starts here and spans across multiple lines).
+
+Note: The shadowed declaration is here:
+
+  --> StorageSlot.txt_2.sol:43:1:
+
+   |
+
+43 | function getBooleanSlot(uint256 slot) public view returns (bool) {
+
+   | ^ (Relevant source part starts here and spans across multiple lines).
+
+
+
+Warning: This declaration shadows an existing declaration.
+
+ --> StorageSlot.txt_2.sol:9:5:
+
+  |
+
+9 |     function getBytes32Slot(uint256 slot) internal view returns (bytes32) {
+
+  |     ^ (Relevant source part starts here and spans across multiple lines).
+
+Note: The shadowed declaration is here:
+
+  --> StorageSlot.txt_2.sol:46:1:
+
+   |
+
+46 | function getBytes32Slot(uint256 slot) public view returns (bytes32) {
+
+   | ^ (Relevant source part starts here and spans across multiple lines).
+
+
+
+Warning: This declaration shadows an existing declaration.
+
+  --> StorageSlot.txt_2.sol:12:5:
+
+   |
+
+12 |     function getUint256Slot(uint256 slot) internal view returns (uint256) {
+
+   |     ^ (Relevant source part starts here and spans across multiple lines).
+
+Note: The shadowed declaration is here:
+
+  --> StorageSlot.txt_2.sol:49:1:
+
+   |
+
+49 | function getUint256Slot(uint256 slot) public view returns (uint256) {
+
+   | ^ (Relevant source part starts here and spans across multiple lines).
+
+
+
+Warning: This declaration shadows an existing declaration.
+
+  --> StorageSlot.txt_2.sol:15:5:
+
+   |
+
+15 |     function getStringSlot(uint256 slot) internal view returns (string) {
+
+   |     ^ (Relevant source part starts here and spans across multiple lines).
+
+Note: The shadowed declaration is here:
+
+  --> StorageSlot.txt_2.sol:52:1:
+
+   |
+
+52 | function getStringSlot(uint256 slot) public view returns (string) {
+
+   | ^ (Relevant source part starts here and spans across multiple lines).
+
+
+
+Warning: This declaration shadows an existing declaration.
+
+  --> StorageSlot.txt_2.sol:18:5:
+
+   |
+
+18 |     function getBytesSlot(uint256 slot) internal view returns (bytes) {
+
+   |     ^ (Relevant source part starts here and spans across multiple lines).
+
+Note: The shadowed declaration is here:
+
+  --> StorageSlot.txt_2.sol:55:1:
+
+   |
+
+55 | function getBytesSlot(uint256 slot) public view returns (bytes) {
+
+   | ^ (Relevant source part starts here and spans across multiple lines).
+
+
+
+Error: Data location must be "storage", "memory" or "calldata" for return parameter in function, but none was given.
+
+  --> StorageSlot.txt_2.sol:15:65:
+
+   |
+
+15 |     function getStringSlot(uint256 slot) internal view returns (string) {
+
+   |                                                                 ^^^^^^
+
+
+
+Error: Data location must be "storage", "memory" or "calldata" for return parameter in function, but none was given.
+
+  --> StorageSlot.txt_2.sol:18:64:
+
+   |
+
+18 |     function getBytesSlot(uint256 slot) internal view returns (bytes) {
+
+   |                                                                ^^^^^
+
+
+
+Error: Data location must be "memory" or "calldata" for return parameter in function, but none was given.
+
+  --> StorageSlot.txt_2.sol:52:59:
+
+   |
+
+52 | function getStringSlot(uint256 slot) public view returns (string) {
+
+   |                                                           ^^^^^^
+
+
+
+Error: Data location must be "memory" or "calldata" for return parameter in function, but none was given.
+
+  --> StorageSlot.txt_2.sol:55:58:
+
+   |
+
+55 | function getBytesSlot(uint256 slot) public view returns (bytes) {
+
+   |                                                          ^^^^^
+
+
+
+
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\site-packages\crytic_compile\platform\solc.py", line 582, in _run_solc
+    ret: Dict = json.loads(stdout)
+  File "D:\ProgramData\Anaconda3\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "D:\ProgramData\Anaconda3\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\ProgramData\Anaconda3\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "D:\ProgramData\Anaconda3\lib\runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "D:\ProgramData\Anaconda3\Scripts\slither.exe\__main__.py", line 7, in <module>
+  File "D:\ProgramData\Anaconda3\lib\site-packages\slither\__main__.py", line 727, in main
+    main_impl(all_detector_classes=detectors, all_printer_classes=printers)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\slither\__main__.py", line 833, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\slither\__main__.py", line 96, in process_all
+    compilations = compile_all(target, **vars(args))
+  File "D:\ProgramData\Anaconda3\lib\site-packages\crytic_compile\crytic_compile.py", line 718, in compile_all
+    compilations.append(CryticCompile(target, **kwargs))
+  File "D:\ProgramData\Anaconda3\lib\site-packages\crytic_compile\crytic_compile.py", line 207, in __init__
+    self._compile(**kwargs)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\crytic_compile\crytic_compile.py", line 629, in _compile
+    self._platform.compile(self, **kwargs)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\crytic_compile\platform\solc.py", line 151, in compile
+    targets_json = _get_targets_json(compilation_unit, self._target, **kwargs)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\crytic_compile\platform\solc.py", line 280, in _get_targets_json
+    return _run_solc(
+  File "D:\ProgramData\Anaconda3\lib\site-packages\crytic_compile\platform\solc.py", line 586, in _run_solc
+    raise InvalidCompilation(f"Invalid solc compilation {stderr}")
+crytic_compile.platform.exceptions.InvalidCompilation: Invalid solc compilation Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.
+
+--> StorageSlot.txt_2.sol
+
+
+
+Error: Free functions cannot have visibility.
+
+  --> StorageSlot.txt_2.sol:40:1:
+
+   |
+
+40 | function getAddressSlot(uint256 slot) public view returns (address) {
+
+   | ^ (Relevant source part starts here and spans across multiple lines).
+
+
+
+Error: Free functions cannot have visibility.
+
+  --> StorageSlot.txt_2.sol:43:1:
+
+   |
+
+43 | function getBooleanSlot(uint256 slot) public view returns (bool) {
+
+   | ^ (Relevant source part starts here and spans across multiple lines).
+
+
+
+Error: Free functions cannot have visibility.
+
+  --> StorageSlot.txt_2.sol:46:1:
+
+   |
+
+46 | function getBytes32Slot(uint256 slot) public view returns (bytes32) {
+
+   | ^ (Relevant source part starts here and spans across multiple lines).
+
+
+
+Error: Free functions cannot have visibility.
+
+  --> StorageSlot.txt_2.sol:49:1:
+
+   |
+
+49 | function getUint256Slot(uint256 slot) public view returns (uint256) {
+
+   | ^ (Relevant source part starts here and spans across multiple lines).
+
+
+
+Error: Free functions cannot have visibility.
+
+  --> StorageSlot.txt_2.sol:52:1:
+
+   |
+
+52 | function getStringSlot(uint256 slot) public view returns (string) {
+
+   | ^ (Relevant source part starts here and spans across multiple lines).
+
+
+
+Error: Free functions cannot have visibility.
+
+  --> StorageSlot.txt_2.sol:55:1:
+
+   |
+
+55 | function getBytesSlot(uint256 slot) public view returns (bytes) {
+
+   | ^ (Relevant source part starts here and spans across multiple lines).
+
+
+
+Warning: This declaration shadows an existing declaration.
+
+ --> StorageSlot.txt_2.sol:3:5:
+
+  |
+
+3 |     function getAddressSlot(uint256 slot) internal view returns (address) {
+
+  |     ^ (Relevant source part starts here and spans across multiple lines).
+
+Note: The shadowed declaration is here:
+
+  --> StorageSlot.txt_2.sol:40:1:
+
+   |
+
+40 | function getAddressSlot(uint256 slot) public view returns (address) {
+
+   | ^ (Relevant source part starts here and spans across multiple lines).
+
+
+
+Warning: This declaration shadows an existing declaration.
+
+ --> StorageSlot.txt_2.sol:6:5:
+
+  |
+
+6 |     function getBooleanSlot(uint256 slot) internal view returns (bool) {
+
+  |     ^ (Relevant source part starts here and spans across multiple lines).
+
+Note: The shadowed declaration is here:
+
+  --> StorageSlot.txt_2.sol:43:1:
+
+   |
+
+43 | function getBooleanSlot(uint256 slot) public view returns (bool) {
+
+   | ^ (Relevant source part starts here and spans across multiple lines).
+
+
+
+Warning: This declaration shadows an existing declaration.
+
+ --> StorageSlot.txt_2.sol:9:5:
+
+  |
+
+9 |     function getBytes32Slot(uint256 slot) internal view returns (bytes32) {
+
+  |     ^ (Relevant source part starts here and spans across multiple lines).
+
+Note: The shadowed declaration is here:
+
+  --> StorageSlot.txt_2.sol:46:1:
+
+   |
+
+46 | function getBytes32Slot(uint256 slot) public view returns (bytes32) {
+
+   | ^ (Relevant source part starts here and spans across multiple lines).
+
+
+
+Warning: This declaration shadows an existing declaration.
+
+  --> StorageSlot.txt_2.sol:12:5:
+
+   |
+
+12 |     function getUint256Slot(uint256 slot) internal view returns (uint256) {
+
+   |     ^ (Relevant source part starts here and spans across multiple lines).
+
+Note: The shadowed declaration is here:
+
+  --> StorageSlot.txt_2.sol:49:1:
+
+   |
+
+49 | function getUint256Slot(uint256 slot) public view returns (uint256) {
+
+   | ^ (Relevant source part starts here and spans across multiple lines).
+
+
+
+Warning: This declaration shadows an existing declaration.
+
+  --> StorageSlot.txt_2.sol:15:5:
+
+   |
+
+15 |     function getStringSlot(uint256 slot) internal view returns (string) {
+
+   |     ^ (Relevant source part starts here and spans across multiple lines).
+
+Note: The shadowed declaration is here:
+
+  --> StorageSlot.txt_2.sol:52:1:
+
+   |
+
+52 | function getStringSlot(uint256 slot) public view returns (string) {
+
+   | ^ (Relevant source part starts here and spans across multiple lines).
+
+
+
+Warning: This declaration shadows an existing declaration.
+
+  --> StorageSlot.txt_2.sol:18:5:
+
+   |
+
+18 |     function getBytesSlot(uint256 slot) internal view returns (bytes) {
+
+   |     ^ (Relevant source part starts here and spans across multiple lines).
+
+Note: The shadowed declaration is here:
+
+  --> StorageSlot.txt_2.sol:55:1:
+
+   |
+
+55 | function getBytesSlot(uint256 slot) public view returns (bytes) {
+
+   | ^ (Relevant source part starts here and spans across multiple lines).
+
+
+
+Error: Data location must be "storage", "memory" or "calldata" for return parameter in function, but none was given.
+
+  --> StorageSlot.txt_2.sol:15:65:
+
+   |
+
+15 |     function getStringSlot(uint256 slot) internal view returns (string) {
+
+   |                                                                 ^^^^^^
+
+
+
+Error: Data location must be "storage", "memory" or "calldata" for return parameter in function, but none was given.
+
+  --> StorageSlot.txt_2.sol:18:64:
+
+   |
+
+18 |     function getBytesSlot(uint256 slot) internal view returns (bytes) {
+
+   |                                                                ^^^^^
+
+
+
+Error: Data location must be "memory" or "calldata" for return parameter in function, but none was given.
+
+  --> StorageSlot.txt_2.sol:52:59:
+
+   |
+
+52 | function getStringSlot(uint256 slot) public view returns (string) {
+
+   |                                                           ^^^^^^
+
+
+
+Error: Data location must be "memory" or "calldata" for return parameter in function, but none was given.
+
+  --> StorageSlot.txt_2.sol:55:58:
+
+   |
+
+55 | function getBytesSlot(uint256 slot) public view returns (bytes) {
+
+   |                                                          ^^^^^
+
+
+
+

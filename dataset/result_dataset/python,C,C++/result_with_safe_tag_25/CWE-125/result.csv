@@ -1,0 +1,5 @@
+"Check for CWE-125 in my1","","warning","cwe_125 found in/home/wanglingxiang/sven/result_with_tag_25/CWE-125/1_12.c","/1_12.c","20","12","20","21"
+"Check for CWE-125 in my1","","warning","cwe_125 found in/home/wanglingxiang/sven/result_with_tag_25/CWE-125/1_24.c","/1_24.c","24","20","24","25"
+"Check for CWE-125 in my1","","warning","cwe_125 found in/home/wanglingxiang/sven/result_with_tag_25/CWE-125/1_25.c","/1_25.c","24","20","24","25"
+"Check for CWE-125 in my1","","warning","cwe_125 found in/home/wanglingxiang/sven/result_with_tag_25/CWE-125/1_5.c","/1_5.c","22","24","22","29"
+"Check for CWE-125 in my1","","warning","cwe_125 found in/home/wanglingxiang/sven/result_with_tag_25/CWE-125/1_7.c","/1_7.c","20","12","20","21"

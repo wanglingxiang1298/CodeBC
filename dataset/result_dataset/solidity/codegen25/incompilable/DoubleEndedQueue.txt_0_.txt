@@ -1,0 +1,2306 @@
+'solc --version' running
+'solc DoubleEndedQueue.txt_0.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,D:\wanglingxiang\program_smart_contract\data_test\other_model\codegen25_7b_instruct_result_split' running
+Compilation warnings/errors on DoubleEndedQueue.txt_0.sol:
+Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.
+
+--> DoubleEndedQueue.txt_0.sol
+
+
+
+Error: No visibility specified. Did you intend to add "public"?
+
+  --> DoubleEndedQueue.txt_0.sol:13:5:
+
+   |
+
+13 |     function Queue() {
+
+   |     ^ (Relevant source part starts here and spans across multiple lines).
+
+
+
+Error: No visibility specified. Did you intend to add "public"?
+
+  --> DoubleEndedQueue.txt_0.sol:29:5:
+
+   |
+
+29 |     function pushBack(bytes32 value) {
+
+   |     ^ (Relevant source part starts here and spans across multiple lines).
+
+
+
+Error: No visibility specified. Did you intend to add "public"?
+
+  --> DoubleEndedQueue.txt_0.sol:43:5:
+
+   |
+
+43 |     function popBack() {
+
+   |     ^ (Relevant source part starts here and spans across multiple lines).
+
+
+
+Error: No visibility specified. Did you intend to add "public"?
+
+  --> DoubleEndedQueue.txt_0.sol:62:5:
+
+   |
+
+62 |     function pushFront(bytes32 value) {
+
+   |     ^ (Relevant source part starts here and spans across multiple lines).
+
+
+
+Error: No visibility specified. Did you intend to add "public"?
+
+  --> DoubleEndedQueue.txt_0.sol:76:5:
+
+   |
+
+76 |     function popFront() {
+
+   |     ^ (Relevant source part starts here and spans across multiple lines).
+
+
+
+Error: Identifier already declared.
+
+  --> DoubleEndedQueue.txt_0.sol:13:5:
+
+   |
+
+13 |     function Queue() {
+
+   |     ^ (Relevant source part starts here and spans across multiple lines).
+
+Note: The previous declaration is here:
+
+ --> DoubleEndedQueue.txt_0.sol:3:5:
+
+  |
+
+3 |     struct Queue {
+
+  |     ^ (Relevant source part starts here and spans across multiple lines).
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:14:9:
+
+   |
+
+14 |         queue.data = new uint256[](1);
+
+   |         ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:15:9:
+
+   |
+
+15 |         queue.head = 0;
+
+   |         ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:16:9:
+
+   |
+
+16 |         queue.tail = 0;
+
+   |         ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:17:9:
+
+   |
+
+17 |         queue.size = 0;
+
+   |         ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:18:9:
+
+   |
+
+18 |         queue.isEmpty = true;
+
+   |         ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:19:9:
+
+   |
+
+19 |         queue.isFull = false;
+
+   |         ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:22:17:
+
+   |
+
+22 |         require(queue.head == 0, "Queue: queue is not empty");
+
+   |                 ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:26:17:
+
+   |
+
+26 |         require(queue.tail == 0, "Queue: queue is not empty");
+
+   |                 ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:30:17:
+
+   |
+
+30 |         require(queue.size < queue.data.length, "Queue: queue is full");
+
+   |                 ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:30:30:
+
+   |
+
+30 |         require(queue.size < queue.data.length, "Queue: queue is full");
+
+   |                              ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:31:9:
+
+   |
+
+31 |         queue.data[queue.tail] = value;
+
+   |         ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:31:20:
+
+   |
+
+31 |         queue.data[queue.tail] = value;
+
+   |                    ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:32:9:
+
+   |
+
+32 |         queue.tail++;
+
+   |         ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:33:9:
+
+   |
+
+33 |         queue.size++;
+
+   |         ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:34:13:
+
+   |
+
+34 |         if (queue.tail == queue.data.length) {
+
+   |             ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:34:27:
+
+   |
+
+34 |         if (queue.tail == queue.data.length) {
+
+   |                           ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:35:13:
+
+   |
+
+35 |             queue.tail = 0;
+
+   |             ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:37:13:
+
+   |
+
+37 |         if (queue.size == 1) {
+
+   |             ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:38:13:
+
+   |
+
+38 |             queue.isEmpty = false;
+
+   |             ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:40:9:
+
+   |
+
+40 |         queue.isFull = false;
+
+   |         ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:44:17:
+
+   |
+
+44 |         require(queue.size > 0, "Queue: queue is empty");
+
+   |                 ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:45:25:
+
+   |
+
+45 |         uint256 index = queue.tail - 1;
+
+   |                         ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:47:21:
+
+   |
+
+47 |             index = queue.data.length - 1;
+
+   |                     ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:49:26:
+
+   |
+
+49 |         bytes32 result = queue.data[index];
+
+   |                          ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:50:9:
+
+   |
+
+50 |         queue.tail--;
+
+   |         ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:51:9:
+
+   |
+
+51 |         queue.size--;
+
+   |         ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:52:13:
+
+   |
+
+52 |         if (queue.tail == 0) {
+
+   |             ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:53:13:
+
+   |
+
+53 |             queue.tail = queue.data.length;
+
+   |             ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:53:26:
+
+   |
+
+53 |             queue.tail = queue.data.length;
+
+   |                          ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:55:13:
+
+   |
+
+55 |         if (queue.size == 0) {
+
+   |             ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:56:13:
+
+   |
+
+56 |             queue.isEmpty = true;
+
+   |             ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:58:9:
+
+   |
+
+58 |         queue.isFull = (queue.size == queue.data.length);
+
+   |         ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:58:25:
+
+   |
+
+58 |         queue.isFull = (queue.size == queue.data.length);
+
+   |                         ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:58:39:
+
+   |
+
+58 |         queue.isFull = (queue.size == queue.data.length);
+
+   |                                       ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:63:17:
+
+   |
+
+63 |         require(queue.size < queue.data.length, "Queue: queue is full");
+
+   |                 ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:63:30:
+
+   |
+
+63 |         require(queue.size < queue.data.length, "Queue: queue is full");
+
+   |                              ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:64:9:
+
+   |
+
+64 |         queue.data[queue.head] = value;
+
+   |         ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:64:20:
+
+   |
+
+64 |         queue.data[queue.head] = value;
+
+   |                    ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:65:9:
+
+   |
+
+65 |         queue.head++;
+
+   |         ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:66:9:
+
+   |
+
+66 |         queue.size++;
+
+   |         ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:67:13:
+
+   |
+
+67 |         if (queue.head == queue.data.length) {
+
+   |             ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:67:27:
+
+   |
+
+67 |         if (queue.head == queue.data.length) {
+
+   |                           ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:68:13:
+
+   |
+
+68 |             queue.head = 0;
+
+   |             ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:70:13:
+
+   |
+
+70 |         if (queue.size == 1) {
+
+   |             ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:71:13:
+
+   |
+
+71 |             queue.isEmpty = false;
+
+   |             ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:73:9:
+
+   |
+
+73 |         queue.isFull = false;
+
+   |         ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:77:17:
+
+   |
+
+77 |         require(queue.size > 0, "Queue: queue is empty");
+
+   |                 ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:78:26:
+
+   |
+
+78 |         bytes32 result = queue.data[queue.head - 1];
+
+   |                          ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:78:37:
+
+   |
+
+78 |         bytes32 result = queue.data[queue.head - 1];
+
+   |                                     ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:79:9:
+
+   |
+
+79 |         queue.head--;
+
+   |         ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:80:9:
+
+   |
+
+80 |         queue.size--;
+
+   |         ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:81:13:
+
+   |
+
+81 |         if (queue.head == queue.data.length) {
+
+   |             ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:81:27:
+
+   |
+
+81 |         if (queue.head == queue.data.length) {
+
+   |                           ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:82:13:
+
+   |
+
+82 |             queue.head = 0;
+
+   |             ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:84:13:
+
+   |
+
+84 |         if (queue.size == 0) {
+
+   |             ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:85:13:
+
+   |
+
+85 |             queue.isEmpty = true;
+
+   |             ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:87:9:
+
+   |
+
+87 |         queue.isFull = (queue.size == queue.data.length);
+
+   |         ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:87:25:
+
+   |
+
+87 |         queue.isFull = (queue.size == queue.data.length);
+
+   |                         ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:87:39:
+
+   |
+
+87 |         queue.isFull = (queue.size == queue.data.length);
+
+   |                                       ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:92:17:
+
+   |
+
+92 |         require(queue.size > 0, "Queue: queue is empty");
+
+   |                 ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:93:16:
+
+   |
+
+93 |         return queue.data[queue.head - 1];
+
+   |                ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:93:27:
+
+   |
+
+93 |         return queue.data[queue.head - 1];
+
+   |                           ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:96:17:
+
+   |
+
+96 |         require(queue.size > 0, "Queue: queue is empty");
+
+   |                 ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:97:25:
+
+   |
+
+97 |         uint256 index = queue.tail - 1;
+
+   |                         ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:99:21:
+
+   |
+
+99 |             index = queue.data.length - 1;
+
+   |                     ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+   --> DoubleEndedQueue.txt_0.sol:101:16:
+
+    |
+
+101 |         return queue.data[index];
+
+    |                ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+   --> DoubleEndedQueue.txt_0.sol:104:39:
+
+    |
+
+104 |         require(index >= 0 && index < queue.size, "Queue: invalid index");
+
+    |                                       ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+   --> DoubleEndedQueue.txt_0.sol:105:31:
+
+    |
+
+105 |         uint256 resultIndex = queue.head + index;
+
+    |                               ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+   --> DoubleEndedQueue.txt_0.sol:106:28:
+
+    |
+
+106 |         if (resultIndex >= queue.data.length) {
+
+    |                            ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+   --> DoubleEndedQueue.txt_0.sol:107:41:
+
+    |
+
+107 |             resultIndex = resultIndex - queue.data.length;
+
+    |                                         ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+   --> DoubleEndedQueue.txt_0.sol:109:16:
+
+    |
+
+109 |         return queue.data[resultIndex];
+
+    |                ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+   --> DoubleEndedQueue.txt_0.sol:112:17:
+
+    |
+
+112 |         require(queue.size > 0, "Queue: queue is empty");
+
+    |                 ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+   --> DoubleEndedQueue.txt_0.sol:113:9:
+
+    |
+
+113 |         queue.head = 0;
+
+    |         ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+   --> DoubleEndedQueue.txt_0.sol:114:9:
+
+    |
+
+114 |         queue.tail = 0;
+
+    |         ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+   --> DoubleEndedQueue.txt_0.sol:115:9:
+
+    |
+
+115 |         queue.size = 0;
+
+    |         ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+   --> DoubleEndedQueue.txt_0.sol:116:9:
+
+    |
+
+116 |         queue.isEmpty = true;
+
+    |         ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+   --> DoubleEndedQueue.txt_0.sol:117:9:
+
+    |
+
+117 |         queue.isFull = false;
+
+    |         ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+   --> DoubleEndedQueue.txt_0.sol:121:16:
+
+    |
+
+121 |         return queue.size;
+
+    |                ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+   --> DoubleEndedQueue.txt_0.sol:124:16:
+
+    |
+
+124 |         return queue.size == 0;
+
+    |                ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+   --> DoubleEndedQueue.txt_0.sol:130:17:
+
+    |
+
+130 |         require(queue.size > 0, "Queue: queue is not empty");
+
+    |                 ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+   --> DoubleEndedQueue.txt_0.sol:134:17:
+
+    |
+
+134 |         require(queue.size > 0, "Queue: queue is empty");
+
+    |                 ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+   --> DoubleEndedQueue.txt_0.sol:135:16:
+
+    |
+
+135 |         return queue.data[queue.head - 1];
+
+    |                ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+   --> DoubleEndedQueue.txt_0.sol:135:27:
+
+    |
+
+135 |         return queue.data[queue.head - 1];
+
+    |                           ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+   --> DoubleEndedQueue.txt_0.sol:138:17:
+
+    |
+
+138 |         require(queue.size > 0, "Queue: queue is empty");
+
+    |                 ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+   --> DoubleEndedQueue.txt_0.sol:139:25:
+
+    |
+
+139 |         uint256 index = queue.tail - 1;
+
+    |                         ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+   --> DoubleEndedQueue.txt_0.sol:141:21:
+
+    |
+
+141 |             index = queue.data.length - 1;
+
+    |                     ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+   --> DoubleEndedQueue.txt_0.sol:143:16:
+
+    |
+
+143 |         return queue.data[index];
+
+    |                ^^^^^
+
+
+
+
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\site-packages\crytic_compile\platform\solc.py", line 582, in _run_solc
+    ret: Dict = json.loads(stdout)
+  File "D:\ProgramData\Anaconda3\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "D:\ProgramData\Anaconda3\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\ProgramData\Anaconda3\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "D:\ProgramData\Anaconda3\lib\runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "D:\ProgramData\Anaconda3\Scripts\slither.exe\__main__.py", line 7, in <module>
+  File "D:\ProgramData\Anaconda3\lib\site-packages\slither\__main__.py", line 727, in main
+    main_impl(all_detector_classes=detectors, all_printer_classes=printers)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\slither\__main__.py", line 833, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\slither\__main__.py", line 96, in process_all
+    compilations = compile_all(target, **vars(args))
+  File "D:\ProgramData\Anaconda3\lib\site-packages\crytic_compile\crytic_compile.py", line 718, in compile_all
+    compilations.append(CryticCompile(target, **kwargs))
+  File "D:\ProgramData\Anaconda3\lib\site-packages\crytic_compile\crytic_compile.py", line 207, in __init__
+    self._compile(**kwargs)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\crytic_compile\crytic_compile.py", line 629, in _compile
+    self._platform.compile(self, **kwargs)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\crytic_compile\platform\solc.py", line 151, in compile
+    targets_json = _get_targets_json(compilation_unit, self._target, **kwargs)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\crytic_compile\platform\solc.py", line 280, in _get_targets_json
+    return _run_solc(
+  File "D:\ProgramData\Anaconda3\lib\site-packages\crytic_compile\platform\solc.py", line 586, in _run_solc
+    raise InvalidCompilation(f"Invalid solc compilation {stderr}")
+crytic_compile.platform.exceptions.InvalidCompilation: Invalid solc compilation Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.
+
+--> DoubleEndedQueue.txt_0.sol
+
+
+
+Error: No visibility specified. Did you intend to add "public"?
+
+  --> DoubleEndedQueue.txt_0.sol:13:5:
+
+   |
+
+13 |     function Queue() {
+
+   |     ^ (Relevant source part starts here and spans across multiple lines).
+
+
+
+Error: No visibility specified. Did you intend to add "public"?
+
+  --> DoubleEndedQueue.txt_0.sol:29:5:
+
+   |
+
+29 |     function pushBack(bytes32 value) {
+
+   |     ^ (Relevant source part starts here and spans across multiple lines).
+
+
+
+Error: No visibility specified. Did you intend to add "public"?
+
+  --> DoubleEndedQueue.txt_0.sol:43:5:
+
+   |
+
+43 |     function popBack() {
+
+   |     ^ (Relevant source part starts here and spans across multiple lines).
+
+
+
+Error: No visibility specified. Did you intend to add "public"?
+
+  --> DoubleEndedQueue.txt_0.sol:62:5:
+
+   |
+
+62 |     function pushFront(bytes32 value) {
+
+   |     ^ (Relevant source part starts here and spans across multiple lines).
+
+
+
+Error: No visibility specified. Did you intend to add "public"?
+
+  --> DoubleEndedQueue.txt_0.sol:76:5:
+
+   |
+
+76 |     function popFront() {
+
+   |     ^ (Relevant source part starts here and spans across multiple lines).
+
+
+
+Error: Identifier already declared.
+
+  --> DoubleEndedQueue.txt_0.sol:13:5:
+
+   |
+
+13 |     function Queue() {
+
+   |     ^ (Relevant source part starts here and spans across multiple lines).
+
+Note: The previous declaration is here:
+
+ --> DoubleEndedQueue.txt_0.sol:3:5:
+
+  |
+
+3 |     struct Queue {
+
+  |     ^ (Relevant source part starts here and spans across multiple lines).
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:14:9:
+
+   |
+
+14 |         queue.data = new uint256[](1);
+
+   |         ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:15:9:
+
+   |
+
+15 |         queue.head = 0;
+
+   |         ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:16:9:
+
+   |
+
+16 |         queue.tail = 0;
+
+   |         ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:17:9:
+
+   |
+
+17 |         queue.size = 0;
+
+   |         ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:18:9:
+
+   |
+
+18 |         queue.isEmpty = true;
+
+   |         ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:19:9:
+
+   |
+
+19 |         queue.isFull = false;
+
+   |         ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:22:17:
+
+   |
+
+22 |         require(queue.head == 0, "Queue: queue is not empty");
+
+   |                 ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:26:17:
+
+   |
+
+26 |         require(queue.tail == 0, "Queue: queue is not empty");
+
+   |                 ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:30:17:
+
+   |
+
+30 |         require(queue.size < queue.data.length, "Queue: queue is full");
+
+   |                 ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:30:30:
+
+   |
+
+30 |         require(queue.size < queue.data.length, "Queue: queue is full");
+
+   |                              ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:31:9:
+
+   |
+
+31 |         queue.data[queue.tail] = value;
+
+   |         ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:31:20:
+
+   |
+
+31 |         queue.data[queue.tail] = value;
+
+   |                    ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:32:9:
+
+   |
+
+32 |         queue.tail++;
+
+   |         ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:33:9:
+
+   |
+
+33 |         queue.size++;
+
+   |         ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:34:13:
+
+   |
+
+34 |         if (queue.tail == queue.data.length) {
+
+   |             ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:34:27:
+
+   |
+
+34 |         if (queue.tail == queue.data.length) {
+
+   |                           ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:35:13:
+
+   |
+
+35 |             queue.tail = 0;
+
+   |             ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:37:13:
+
+   |
+
+37 |         if (queue.size == 1) {
+
+   |             ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:38:13:
+
+   |
+
+38 |             queue.isEmpty = false;
+
+   |             ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:40:9:
+
+   |
+
+40 |         queue.isFull = false;
+
+   |         ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:44:17:
+
+   |
+
+44 |         require(queue.size > 0, "Queue: queue is empty");
+
+   |                 ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:45:25:
+
+   |
+
+45 |         uint256 index = queue.tail - 1;
+
+   |                         ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:47:21:
+
+   |
+
+47 |             index = queue.data.length - 1;
+
+   |                     ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:49:26:
+
+   |
+
+49 |         bytes32 result = queue.data[index];
+
+   |                          ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:50:9:
+
+   |
+
+50 |         queue.tail--;
+
+   |         ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:51:9:
+
+   |
+
+51 |         queue.size--;
+
+   |         ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:52:13:
+
+   |
+
+52 |         if (queue.tail == 0) {
+
+   |             ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:53:13:
+
+   |
+
+53 |             queue.tail = queue.data.length;
+
+   |             ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:53:26:
+
+   |
+
+53 |             queue.tail = queue.data.length;
+
+   |                          ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:55:13:
+
+   |
+
+55 |         if (queue.size == 0) {
+
+   |             ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:56:13:
+
+   |
+
+56 |             queue.isEmpty = true;
+
+   |             ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:58:9:
+
+   |
+
+58 |         queue.isFull = (queue.size == queue.data.length);
+
+   |         ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:58:25:
+
+   |
+
+58 |         queue.isFull = (queue.size == queue.data.length);
+
+   |                         ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:58:39:
+
+   |
+
+58 |         queue.isFull = (queue.size == queue.data.length);
+
+   |                                       ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:63:17:
+
+   |
+
+63 |         require(queue.size < queue.data.length, "Queue: queue is full");
+
+   |                 ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:63:30:
+
+   |
+
+63 |         require(queue.size < queue.data.length, "Queue: queue is full");
+
+   |                              ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:64:9:
+
+   |
+
+64 |         queue.data[queue.head] = value;
+
+   |         ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:64:20:
+
+   |
+
+64 |         queue.data[queue.head] = value;
+
+   |                    ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:65:9:
+
+   |
+
+65 |         queue.head++;
+
+   |         ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:66:9:
+
+   |
+
+66 |         queue.size++;
+
+   |         ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:67:13:
+
+   |
+
+67 |         if (queue.head == queue.data.length) {
+
+   |             ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:67:27:
+
+   |
+
+67 |         if (queue.head == queue.data.length) {
+
+   |                           ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:68:13:
+
+   |
+
+68 |             queue.head = 0;
+
+   |             ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:70:13:
+
+   |
+
+70 |         if (queue.size == 1) {
+
+   |             ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:71:13:
+
+   |
+
+71 |             queue.isEmpty = false;
+
+   |             ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:73:9:
+
+   |
+
+73 |         queue.isFull = false;
+
+   |         ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:77:17:
+
+   |
+
+77 |         require(queue.size > 0, "Queue: queue is empty");
+
+   |                 ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:78:26:
+
+   |
+
+78 |         bytes32 result = queue.data[queue.head - 1];
+
+   |                          ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:78:37:
+
+   |
+
+78 |         bytes32 result = queue.data[queue.head - 1];
+
+   |                                     ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:79:9:
+
+   |
+
+79 |         queue.head--;
+
+   |         ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:80:9:
+
+   |
+
+80 |         queue.size--;
+
+   |         ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:81:13:
+
+   |
+
+81 |         if (queue.head == queue.data.length) {
+
+   |             ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:81:27:
+
+   |
+
+81 |         if (queue.head == queue.data.length) {
+
+   |                           ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:82:13:
+
+   |
+
+82 |             queue.head = 0;
+
+   |             ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:84:13:
+
+   |
+
+84 |         if (queue.size == 0) {
+
+   |             ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:85:13:
+
+   |
+
+85 |             queue.isEmpty = true;
+
+   |             ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:87:9:
+
+   |
+
+87 |         queue.isFull = (queue.size == queue.data.length);
+
+   |         ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:87:25:
+
+   |
+
+87 |         queue.isFull = (queue.size == queue.data.length);
+
+   |                         ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:87:39:
+
+   |
+
+87 |         queue.isFull = (queue.size == queue.data.length);
+
+   |                                       ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:92:17:
+
+   |
+
+92 |         require(queue.size > 0, "Queue: queue is empty");
+
+   |                 ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:93:16:
+
+   |
+
+93 |         return queue.data[queue.head - 1];
+
+   |                ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:93:27:
+
+   |
+
+93 |         return queue.data[queue.head - 1];
+
+   |                           ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:96:17:
+
+   |
+
+96 |         require(queue.size > 0, "Queue: queue is empty");
+
+   |                 ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:97:25:
+
+   |
+
+97 |         uint256 index = queue.tail - 1;
+
+   |                         ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+  --> DoubleEndedQueue.txt_0.sol:99:21:
+
+   |
+
+99 |             index = queue.data.length - 1;
+
+   |                     ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+   --> DoubleEndedQueue.txt_0.sol:101:16:
+
+    |
+
+101 |         return queue.data[index];
+
+    |                ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+   --> DoubleEndedQueue.txt_0.sol:104:39:
+
+    |
+
+104 |         require(index >= 0 && index < queue.size, "Queue: invalid index");
+
+    |                                       ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+   --> DoubleEndedQueue.txt_0.sol:105:31:
+
+    |
+
+105 |         uint256 resultIndex = queue.head + index;
+
+    |                               ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+   --> DoubleEndedQueue.txt_0.sol:106:28:
+
+    |
+
+106 |         if (resultIndex >= queue.data.length) {
+
+    |                            ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+   --> DoubleEndedQueue.txt_0.sol:107:41:
+
+    |
+
+107 |             resultIndex = resultIndex - queue.data.length;
+
+    |                                         ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+   --> DoubleEndedQueue.txt_0.sol:109:16:
+
+    |
+
+109 |         return queue.data[resultIndex];
+
+    |                ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+   --> DoubleEndedQueue.txt_0.sol:112:17:
+
+    |
+
+112 |         require(queue.size > 0, "Queue: queue is empty");
+
+    |                 ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+   --> DoubleEndedQueue.txt_0.sol:113:9:
+
+    |
+
+113 |         queue.head = 0;
+
+    |         ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+   --> DoubleEndedQueue.txt_0.sol:114:9:
+
+    |
+
+114 |         queue.tail = 0;
+
+    |         ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+   --> DoubleEndedQueue.txt_0.sol:115:9:
+
+    |
+
+115 |         queue.size = 0;
+
+    |         ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+   --> DoubleEndedQueue.txt_0.sol:116:9:
+
+    |
+
+116 |         queue.isEmpty = true;
+
+    |         ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+   --> DoubleEndedQueue.txt_0.sol:117:9:
+
+    |
+
+117 |         queue.isFull = false;
+
+    |         ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+   --> DoubleEndedQueue.txt_0.sol:121:16:
+
+    |
+
+121 |         return queue.size;
+
+    |                ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+   --> DoubleEndedQueue.txt_0.sol:124:16:
+
+    |
+
+124 |         return queue.size == 0;
+
+    |                ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+   --> DoubleEndedQueue.txt_0.sol:130:17:
+
+    |
+
+130 |         require(queue.size > 0, "Queue: queue is not empty");
+
+    |                 ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+   --> DoubleEndedQueue.txt_0.sol:134:17:
+
+    |
+
+134 |         require(queue.size > 0, "Queue: queue is empty");
+
+    |                 ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+   --> DoubleEndedQueue.txt_0.sol:135:16:
+
+    |
+
+135 |         return queue.data[queue.head - 1];
+
+    |                ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+   --> DoubleEndedQueue.txt_0.sol:135:27:
+
+    |
+
+135 |         return queue.data[queue.head - 1];
+
+    |                           ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+   --> DoubleEndedQueue.txt_0.sol:138:17:
+
+    |
+
+138 |         require(queue.size > 0, "Queue: queue is empty");
+
+    |                 ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+   --> DoubleEndedQueue.txt_0.sol:139:25:
+
+    |
+
+139 |         uint256 index = queue.tail - 1;
+
+    |                         ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+   --> DoubleEndedQueue.txt_0.sol:141:21:
+
+    |
+
+141 |             index = queue.data.length - 1;
+
+    |                     ^^^^^
+
+
+
+Error: Undeclared identifier. Did you mean "Queue"?
+
+   --> DoubleEndedQueue.txt_0.sol:143:16:
+
+    |
+
+143 |         return queue.data[index];
+
+    |                ^^^^^
+
+
+
+

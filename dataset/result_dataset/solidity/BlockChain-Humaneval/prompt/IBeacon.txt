@@ -1,0 +1,4 @@
+Generate smart contract code that meets the following requirements:
+ @dev This is the interface that {BeaconProxy} expects of its beacon.
+ @dev Must return an address that can be used as a delegate call target. {UpgradeableBeacon} will check that this address is a contract.
+Please give the contract code
