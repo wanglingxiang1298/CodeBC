@@ -27,7 +27,7 @@ filetree
 │  ├── /train_dataset/
 │  │  ├── /SASCsmall-F/                
 │  │  ├── /SASCsmall-F for CI/                    
-│  │  └─── /SASCsmall-F for VD/
+│  │  └── /SASCsmall-F for VD/
 ```
 
 ### Reference
