@@ -1,4 +1,6 @@
 Generate smart contract code that meets the following requirements:
- @dev Interface of the ERC165 standard, as defined in the https://eips.ethereum.org/EIPS/eip-165[EIP]. Implementers can declare support of contract interfaces, which can then be queried by others ({ERC165Checker}). For an implementation, see {ERC165}.
- @dev Returns true if this contract implements the interface defined by `interfaceId`. See the corresponding https://eips.ethereum.org/EIPS/eip-165#how-interfaces-are-identified[EIP section] to learn more about how these ids are created. This function call must use less than 30 000 gas.
+Programming with solidity ^ version number 0.8.20
+Implement an interface contract called IERC165, which defines a function to check if the contract supports a specific interface.
+The following function needs to be completed, the function name and function are as follows:
+supportsInterface: This function is a public view function that checks whether the contract supports a particular interface. It accepts a parameter interfaceId of type bytes4, which is the identifier of the interface to be checked. It returns a boolean value indicating whether the contract supports the interface.
 Please give the contract code

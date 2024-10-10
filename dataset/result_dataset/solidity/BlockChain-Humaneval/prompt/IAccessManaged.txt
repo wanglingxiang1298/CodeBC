@@ -1,6 +1,14 @@
 Generate smart contract code that meets the following requirements:
- @dev Authority that manages this contract was updated.
- @dev Returns the current authority.
- @dev Transfers control to a new authority. The caller must be the current authority.
- @dev Returns true only in the context of a delayed restricted call, at the moment that the scheduled operation is being consumed. Prevents denial of service for delayed restricted calls in the case that the contract performs attacker controlled calls.
+Programming with solidity ^ version number 0.8.20
+Implement the interface contract called IAccessManaged It defines a number of functions and events to manage access rights.
+Error handling that needs to be patched
+AccessManagedUnauthorized(): this error indicates that the caller does not have permission to perform an action.
+AccessManagedRequiredDelay(): This error indicates that the caller needs to wait for a certain period of time before performing an action.
+AccessManagedInvalidAuthority(): This error indicates that the supplied authority control address is invalid.
+The following functions need to be completed, with the following names and functions:
+authority function: used to get the current authority control address.
+setAuthority function: used to set the authority control address.
+isConsumingScheduledOp function: used to check if a scheduled operation is being executed.
+Event Description
+AuthorityUpdated(address authority): this event is triggered when the authority control address is updated. It contains a parameter of type address representing the new authority control address.
 Please give the contract code

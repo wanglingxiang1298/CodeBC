@@ -1,4 +1,6 @@
 Generate smart contract code that meets the following requirements:
- @dev ERC-2309: ERC-721 Consecutive Transfer Extension.
- @dev Emitted when the tokens from `fromTokenId` to `toTokenId` are transferred from `fromAddress` to `toAddress`.
+Programming with solidity ^ version number 0.8.20
+Implement an interface contract called IERC2309 that defines an event to record successive token transfers.
+Description of the event to be completed
+ConsecutiveTransfer: This event is triggered on consecutive token transfers.
 Please give the contract code

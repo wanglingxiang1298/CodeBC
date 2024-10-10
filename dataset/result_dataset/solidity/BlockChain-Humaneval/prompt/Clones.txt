@@ -1,8 +1,9 @@
 Generate smart contract code that meets the following requirements:
- @dev https://eips.ethereum.org/EIPS/eip-1167[EIP 1167] is a standard for deploying minimal proxy contracts, also known as "clones". > To simply and cheaply clone contract functionality in an immutable way, this standard specifies > a minimal bytecode implementation that delegates all calls to a known, fixed address. The library includes functions to deploy a proxy using either `create` (traditional deployment) or `create2` (salted deterministic deployment). It also includes functions to predict the addresses of clones deployed using the deterministic method.
- @dev A clone instance deployment failed.
- @dev Deploys and returns the address of a clone that mimics the behaviour of `implementation`. This function uses the create opcode, which should never revert.
- @dev Deploys and returns the address of a clone that mimics the behaviour of `implementation`. This function uses the create2 opcode and a `salt` to deterministically deploy the clone. Using the same `implementation` and `salt` multiple time will revert, since the clones cannot be deployed twice at the same address.
- @dev Computes the address of a clone deployed using {Clones-cloneDeterministic}.
- @dev Computes the address of a clone deployed using {Clones-cloneDeterministic}.
+Programming with solidity ^ version number 0.8.20
+Implement a library called Clones that creates clone instances of a contract and throws an exception when the clone fails to be created.
+The following functions are required, the names and functions are as follows:
+clone function: creates a clone of the contract. It accepts a contract address as a parameter and returns the address of the clone instance.
+cloneDeterministic function: creates a deterministic clone instance of the contract based on the salt value. It takes a contract address and a salt value as arguments and returns the address of the cloned instance.
+predictDeterministicAddress function: predicts the address of the deterministic clone instance that creates a contract based on the salt value. It accepts a contract address, salt value and deployer address as arguments and returns the predicted clone instance address.
+These functions construct the clone instance creation code by using assembly language and use the create and create2 instructions to create the clone instance. If creation fails, the ERC1167FailedCreateClone exception is thrown. predictDeterministicAddress function is used to predict the address of a deterministic clone instance created based on the salt value.
 Please give the contract code

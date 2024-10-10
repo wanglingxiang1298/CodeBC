@@ -1,12 +1,16 @@
 Generate smart contract code that meets the following requirements:
- @dev Common interface for {ERC20Votes}, {ERC721Votes}, and other {Votes}-enabled contracts.
- @dev The signature used has expired.
- @dev Emitted when an account changes their delegate.
- @dev Emitted when a token transfer or delegate change results in changes to a delegate's number of voting units.
- @dev Returns the current amount of votes that `account` has.
- @dev Returns the amount of votes that `account` had at a specific moment in the past. If the `clock()` is configured to use block numbers, this will return the value at the end of the corresponding block.
- @dev Returns the total supply of votes available at a specific moment in the past. If the `clock()` is configured to use block numbers, this will return the value at the end of the corresponding block. NOTE: This value is the sum of all available votes, which is not necessarily the sum of all delegated votes. Votes that have not been delegated are still part of total supply, even though they would not participate in a vote.
- @dev Returns the delegate that `account` has chosen.
- @dev Delegates votes from the sender to `delegatee`.
- @dev Delegates votes from signer to `delegatee`.
+Programming with solidity ^ version number 0.8.20
+Implement the interface contract called IVotes, which defines some functionality for voting and delegating.
+Description of the error types that need to be implemented
+VotesExpiredSignature: This error type indicates that the signature has expired.
+Description of events to be implemented
+DelegateChanged: This event is triggered when the delegator changes the delegate, logging the addresses of the delegator, the original delegator and the new delegator.
+DelegateVotesChanged: This event is triggered when a delegate's votes have changed, and records the address of the delegate, the previous votes, and the new votes.
+Functions to be implemented
+getVotes: This function is used to get the number of votes for a given account.
+getPastVotes: This function is used to get the number of votes for a given account at a given point in time.
+getPastTotalSupply: This function gets the total number of votes for a given account at a given time.
+delegates: This function is used to get the address of the delegator for the specified account.
+delegate: This function is used to delegate the caller's voting rights to the specified delegator.
+delegateBySig: This function is used to delegate the caller's voting rights to a specified delegator by means of a signature.
 Please give the contract code

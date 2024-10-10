@@ -1,5 +1,6 @@
 Generate smart contract code that meets the following requirements:
- @dev Interface for any contract that wants to support {IERC1363-transferAndCall} or {IERC1363-transferFromAndCall} from {ERC1363} token contracts.
- Note: the ERC-165 identifier for this interface is 0x88a7ca5c. 0x88a7ca5c === bytes4(keccak256("onTransferReceived(address,address,uint256,bytes)"))
- @notice Handle the receipt of ERC1363 tokens @dev Any ERC1363 smart contract calls this function on the recipient after a `transfer` or a `transferFrom`. This function MAY throw to revert and reject the transfer. Return of other than the magic value MUST result in the transaction being reverted. Note: the token contract address is always the message sender. @param operator address The address which called `transferAndCall` or `transferFromAndCall` function @param from address The address which are token transferred from @param amount uint256 The amount of tokens transferred @param data bytes Additional data with no specified format @return `bytes4(keccak256("onTransferReceived(address,address,uint256,bytes)"))` unless throwing
+Programming with solidity ^ version number 0.8.20
+Implement the interface contract called IERC1363Receiver, which defines a function to receive the transfer of ERC1363 tokens.
+The following function needs to be completed with the following function name and function:
+onTransferReceived: This function is used to receive the transfer of ERC1363 tokens and returns a value of type bytes4. It accepts four parameters: operator: the address where the transfer operation is performed. from: the original address where the tokens are transferred. amount: the number of tokens transferred. data: additional data. This function returns a value of type bytes4 indicating whether the contract receiving the tokens complies with the ERC1363 interface specification.
 Please give the contract code

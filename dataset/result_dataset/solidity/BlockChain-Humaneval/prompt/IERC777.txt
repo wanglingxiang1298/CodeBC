@@ -1,20 +1,25 @@
 Generate smart contract code that meets the following requirements:
- @dev Interface of the ERC777Token standard as defined in the EIP. This contract uses the https://eips.ethereum.org/EIPS/eip-1820[ERC1820 registry standard] to let token holders and recipients react to token movements by using setting implementers for the associated interfaces in said registry. See {IERC1820Registry} and {IERC1820Implementer}.
- @dev Emitted when `amount` tokens are created by `operator` and assigned to `to`. Note that some additional user `data` and `operatorData` can be logged in the event.
- @dev Emitted when `operator` destroys `amount` tokens from `account`. Note that some additional user `data` and `operatorData` can be logged in the event.
- @dev Emitted when `operator` is made operator for `tokenHolder`.
- @dev Emitted when `operator` is revoked its operator status for `tokenHolder`.
- @dev Returns the name of the token.
- @dev Returns the symbol of the token, usually a shorter version of the name.
- @dev Returns the smallest part of the token that is not divisible. This means all token operations (creation, movement and destruction) must have amounts that are a multiple of this number. For most token contracts, this value will equal 1.
- @dev Returns the amount of tokens in existence.
- @dev Returns the amount of tokens owned by an account (`owner`).
- @dev Moves `amount` tokens from the caller's account to `recipient`. If send or receive hooks are registered for the caller and `recipient`, the corresponding functions will be called with `data` and empty `operatorData`. See {IERC777Sender} and {IERC777Recipient}. Emits a {Sent} event. Requirements - the caller must have at least `amount` tokens. - `recipient` cannot be the zero address. - if `recipient` is a contract, it must implement the {IERC777Recipient} interface.
- @dev Destroys `amount` tokens from the caller's account, reducing the total supply. If a send hook is registered for the caller, the corresponding function will be called with `data` and empty `operatorData`. See {IERC777Sender}. Emits a {Burned} event. Requirements - the caller must have at least `amount` tokens.
- @dev Returns true if an account is an operator of `tokenHolder`. Operators can send and burn tokens on behalf of their owners. All accounts are their own operator. See {operatorSend} and {operatorBurn}.
- @dev Make an account an operator of the caller. See {isOperatorFor}. Emits an {AuthorizedOperator} event. Requirements - `operator` cannot be calling address.
- @dev Revoke an account's operator status for the caller. See {isOperatorFor} and {defaultOperators}. Emits a {RevokedOperator} event. Requirements - `operator` cannot be calling address.
- @dev Returns the list of default operators. These accounts are operators for all token holders, even if {authorizeOperator} was never called on them. This list is immutable, but individual holders may revoke these via {revokeOperator}, in which case {isOperatorFor} will return false.
- @dev Moves `amount` tokens from `sender` to `recipient`. The caller must be an operator of `sender`. If send or receive hooks are registered for `sender` and `recipient`, the corresponding functions will be called with `data` and `operatorData`. See {IERC777Sender} and {IERC777Recipient}. Emits a {Sent} event. Requirements - `sender` cannot be the zero address. - `sender` must have at least `amount` tokens. - the caller must be an operator for `sender`. - `recipient` cannot be the zero address. - if `recipient` is a contract, it must implement the {IERC777Recipient} interface.
- @dev Destroys `amount` tokens from `account`, reducing the total supply. The caller must be an operator of `account`. If a send hook is registered for `account`, the corresponding function will be called with `data` and `operatorData`. See {IERC777Sender}. Emits a {Burned} event. Requirements - `account` cannot be the zero address. - `account` must have at least `amount` tokens. - the caller must be an operator for `account`.
+Programming with solidity ^ version number 0.8.20
+Implement the interface contract called IERC777, which defines a set of events and functions for implementing the ERC777 standard token functionality.
+The following functions need to be completed, the function names and functions are listed below:
+Description of the events that need to be completed
+Minted: This event is triggered when a token is minted.
+Burned: Triggered when the token is destroyed.
+AuthorizedOperator: Triggered when the operator is authorized.
+RevokedOperator: Triggered when the authorization of the operator is revoked.
+Sent: Triggered when the token is sent.
+Functions that need to be completed
+name: This function is a public view function that gets the name of the token.
+symbol: This function is a public view function that gets the symbol of the token.
+granularity: This function is a public view function to get the granularity of the token.
+totalSupply: This function is a public view function for getting the total supply of tokens.
+balanceOf: This function is a public view function that gets the balance of tokens in the specified account.
+send: This function is used to send the specified number of tokens to the target address.
+burn: This function destroys the specified number of tokens.
+isOperatorFor: This function is a public view function that checks if an address is the operator of another address.
+authorizeOperator: This function is used to authorize an address as an operator.
+revokeOperator: This function is used to revoke the operator privileges of an address.
+defaultOperators: This function is a public view function that gets a list of default operator addresses.
+operatorSend: This function is used by the operator to send tokens.
+operatorBurn: This function is used by the operator to destroy tokens.
 Please give the contract code

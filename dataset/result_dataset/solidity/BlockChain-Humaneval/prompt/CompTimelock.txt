@@ -1,3 +1,20 @@
 Generate smart contract code that meets the following requirements:
- Copyright 2020 Compound Labs, Inc. Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met: 1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following    disclaimer. 2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the    following disclaimer in the documentation and/or other materials provided with the distribution. 3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote    products derived from this software without specific prior written permission. THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+Programming with solidity ^ version number 0.8.20
+Implementing a contract instance called CompTimelock.This CompTimelock contract implements a timelock mechanism that allows transactions to be queued and executed at a future time.
+The contract has the following key components:
+Events to log state changes and transaction executions
+Constants for grace period and delay thresholds
+Admin and pending admin roles for authorization
+Transaction queue stored as a mapping
+Functions for queueing, cancelling and executing transactions
+The following functions need to be completed. The function names and functions are listed below:
+constructor(): Initializes admin and delay on deployment
+setDelay(): Sets a new minimum delay period
+acceptAdmin(): Transfers admin rights to pending admin
+setPendingAdmin(): Sets a new pending admin address
+queueTransaction(): Queues a new transaction for future execution
+cancelTransaction(): Cancels a previously queued transaction
+executeTransaction(): Executes a previously queued transaction if valid
+getBlockTimestamp(): Gets the current block timestamp
+Only the admin can queue, cancel or execute transactions. Transactions must be queued with a delay and can only be executed within the grace period window after their eta. This ensures important actions are delayed and decentralized control over time.
 Please give the contract code

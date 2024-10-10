@@ -1,11 +1,14 @@
 Generate smart contract code that meets the following requirements:
- @dev Interface of the ERC20 standard as defined in the EIP.
- @dev Emitted when `value` tokens are moved from one account (`from`) to another (`to`). Note that `value` may be zero.
- @dev Emitted when the allowance of a `spender` for an `owner` is set by a call to {approve}. `value` is the new allowance.
- @dev Returns the value of tokens in existence.
- @dev Returns the value of tokens owned by `account`.
- @dev Moves a `value` amount of tokens from the caller's account to `to`. Returns a boolean value indicating whether the operation succeeded. Emits a {Transfer} event.
- @dev Returns the remaining number of tokens that `spender` will be allowed to spend on behalf of `owner` through {transferFrom}. This is zero by default. This value changes when {approve} or {transferFrom} are called.
- @dev Sets a `value` amount of tokens as the allowance of `spender` over the caller's tokens. Returns a boolean value indicating whether the operation succeeded. IMPORTANT: Beware that changing an allowance with this method brings the risk that someone may use both the old and the new allowance by unfortunate transaction ordering. One possible solution to mitigate this race condition is to first reduce the spender's allowance to 0 and set the desired value afterwards: https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729 Emits an {Approval} event.
- @dev Moves a `value` amount of tokens from `from` to `to` using the allowance mechanism. `value` is then deducted from the caller's allowance. Returns a boolean value indicating whether the operation succeeded. Emits a {Transfer} event.
+Programming with solidity ^ version number 0.8.20
+Implement the interface contract called IERC20, which defines a set of events and functions for implementing the ERC20 standard token functionality.
+Description of the events to be accomplished
+Transfer: This event is triggered when a token is transferred from one address to another.
+Approval: Triggered when an address is authorized to transfer a certain number of tokens on behalf of the owner.
+Functions to complete
+totalSupply: This function is a public view function to get the total supply of tokens.
+balanceOf: This function is a public view function that gets the balance of tokens in the specified account.
+transfer: This function is used to transfer a specified number of tokens from the caller's account to the target account.
+allowance: This function is a public view function that gets the number of tokens the owner has authorized an address to transfer.
+approve: This function is used to authorize an address to transfer a certain amount of tokens on behalf of the owner.
+transferFrom: This function is used to transfer a certain number of tokens from one address to another, provided that the address has been authorized to transfer these tokens.
 Please give the contract code

@@ -1,3 +1,26 @@
 Generate smart contract code that meets the following requirements:
- https://github.com/compound-finance/compound-protocol/blob/master/contracts/Timelock.sol[Compound timelock] interface
+Programming with solidity ^ version number 0.8.20
+Implement an interface contract called ICompoundTimelock, which defines a set of events and functions to manage the operation of the timelock contract.
+Description of the events to be completed
+NewAdmin: This event is triggered when a new administrator is set up.
+NewPendingAdmin: Triggered when a new pending administrator is set.
+NewDelay: Triggered when a new delay time is set.
+CancelTransaction: Triggered when the transaction is canceled.
+ExecuteTransaction: Triggered when the transaction is executed.
+QueueTransaction: Triggered when the transaction is added to a queue.
+Functions to complete
+receive: This function is used to receive Ether and deposit it into the contract.
+GRACE_PERIOD: This function is a public view function that gets the grace period time.
+MINIMUM_DELAY: This function is a public view function to get the minimum delay time.
+MAXIMUM_DELAY: This function is a public view function to get the maximum delay time.
+admin: This function is a public view function to get the current administrator address.
+pendingAdmin: This function is a public view function that gets the address of the pending administrator.
+delay: This function is a public view function that gets the current delay time.
+queuedTransactions: This function is a public view function that checks if a particular transaction is in the queue.
+setDelay: This function is used to set the delay time.
+acceptAdmin: This function is used to accept administrator privileges.
+setPendingAdmin: This function sets the pending administrator.
+queueTransaction: This function adds a transaction to a queue.
+cancelTransaction: This function is used to cancel a transaction.
+executeTransaction: This function is used to execute a transaction.
 Please give the contract code

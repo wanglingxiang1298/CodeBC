@@ -1,6 +1,8 @@
 Generate smart contract code that meets the following requirements:
- @dev ERC-1967: Proxy Storage Slots. This interface contains the events defined in the ERC.
- @dev Emitted when the implementation is upgraded.
- @dev Emitted when the admin account has changed.
- @dev Emitted when the beacon is changed.
+Programming with solidity ^ version number 0.8.20
+Implement the interface contract called IERC1967, which defines a number of events that are used to upgrade the contract and manage the contract's administrators.
+Description of the events to be accomplished
+Upgraded: This event is triggered when the contract is upgraded.
+AdminChanged: This event is triggered when the contract administrator is changed.
+BeaconUpgraded: This event is triggered when the beacon is upgraded.
 Please give the contract code

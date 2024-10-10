@@ -1,4 +1,10 @@
 Generate smart contract code that meets the following requirements:
- @dev Standard interface for permissioning originally defined in Dappsys.
- @dev Returns true if the caller can invoke on a target the function identified by a function selector.
+Programming with solidity ^ version number 0.8.20
+Implement an interface contract called IAuthority. It defines a function that checks whether the caller has permission to call a specific function of the target contract.
+The following function needs to be completed with the following function name and function:
+canCall: This function is a public view function that checks whether the caller has permission to call a specific function of the target contract. It accepts three parameters:
+caller: the address of the caller.
+target: the address of the target contract.
+selector: the selector (function signature) of the target function.
+This function returns a boolean value indicating whether the call is allowed or not.
 Please give the contract code

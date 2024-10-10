@@ -1,7 +1,9 @@
 Generate smart contract code that meets the following requirements:
- @dev Library for managing uint256 to bool mapping in a compact and efficient way, provided the keys are sequential. Largely inspired by Uniswap's https://github.com/Uniswap/merkle-distributor/blob/master/contracts/MerkleDistributor.sol[merkle-distributor]. BitMaps pack 256 booleans across each bit of a single 256-bit slot of `uint256` type. Hence booleans corresponding to 256 _sequential_ indices would only consume a single slot, unlike the regular `bool` which would consume an entire slot for a single value. This results in gas savings in two ways: - Setting a zero value to non-zero only once every 256 times - Accessing the same warm slot for every 256 _sequential_ indices
- @dev Returns whether the bit at `index` is set.
- @dev Sets the bit at `index` to the boolean `value`.
- @dev Sets the bit at `index`.
- @dev Unsets the bit at `index`.
+Programming with solidity ^ version number 0.8.20
+Implement a library called BitMaps for manipulating bitmap data structures.
+The following functions need to be completed, with the following names and functions:
+get: gets the bit value at the specified index.
+setTo: sets the bit value at the specified index to the given value.
+set: set the bit value at the specified index to 1.
+unset: sets the bit value at the specified index to 0.
 Please give the contract code

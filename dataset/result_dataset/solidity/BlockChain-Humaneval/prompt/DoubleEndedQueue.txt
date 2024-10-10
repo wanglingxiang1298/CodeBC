@@ -1,17 +1,16 @@
 Generate smart contract code that meets the following requirements:
- @dev A sequence of items with the ability to efficiently push and pop items (i.e. insert and remove) on both ends of the sequence (called front and back). Among other access patterns, it can be used to implement efficient LIFO and FIFO queues. Storage use is optimized, and all operations are O(1) constant time. This includes {clear}, given that the existing queue contents are left in storage. The struct is called `Bytes32Deque`. Other types can be cast to and from `bytes32`. This data structure can only be used in storage, and not in memory. ```solidity DoubleEndedQueue.Bytes32Deque queue; ```
- @dev An operation (e.g. {front}) couldn't be completed due to the queue being empty.
- @dev A push operation couldn't be completed due to the queue being full.
- @dev An operation (e.g. {at}) couldn't be completed due to an index being out of bounds.
- @dev Indices are 128 bits so begin and end are packed in a single storage slot for efficient access. Struct members have an underscore prefix indicating that they are "private" and should not be read or written to directly. Use the functions provided below instead. Modifying the struct manually may violate assumptions and lead to unexpected behavior. The first item is at data[begin] and the last item is at data[end - 1]. This range can wrap around.
- @dev Inserts an item at the end of the queue. Reverts with {QueueFull} if the queue is full.
- @dev Removes the item at the end of the queue and returns it. Reverts with {QueueEmpty} if the queue is empty.
- @dev Inserts an item at the beginning of the queue. Reverts with {QueueFull} if the queue is full.
- @dev Removes the item at the beginning of the queue and returns it. Reverts with `QueueEmpty` if the queue is empty.
- @dev Returns the item at the beginning of the queue. Reverts with `QueueEmpty` if the queue is empty.
- @dev Returns the item at the end of the queue. Reverts with `QueueEmpty` if the queue is empty.
- @dev Return the item at a position in the queue given by `index`, with the first item at 0 and last item at `length(deque) - 1`. Reverts with `QueueOutOfBounds` if the index is out of bounds.
- @dev Resets the queue back to being empty. NOTE: The current items are left behind in storage. This does not affect the functioning of the queue, but misses out on potential gas refunds.
- @dev Returns the number of items in the queue.
- @dev Returns true if the queue is empty.
+Programming with solidity ^ version number 0.8.20
+The implementation of the library named DoubleEndedQueue is used for used to implement a double-ended queue (deque) to store values of type bytes32.
+The following functions need to be completed, the names and functions are as follows:
+pushBack: adds a value to the end of the queue.
+popBack: pops a value from the end of the queue.
+pushFront: Adds a value to the front of the queue.
+popFront: Pop a value from the front of the queue.
+front: Returns the value at the front of the queue, but does not remove it.
+back: Returns the value at the end of the queue, but does not remove it.
+at: Returns the value at the specified index position in the queue.
+clear: Clears the queue, resetting the start and end indices.
+length: Returns the length of the queue.
+empty: Checks if the queue is empty.
+In addition, the library defines three error types: QueueEmpty, QueueFull, and QueueOutOfBounds, which are used to raise exceptions under certain conditions.
 Please give the contract code

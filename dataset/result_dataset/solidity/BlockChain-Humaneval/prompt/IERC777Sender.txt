@@ -1,4 +1,6 @@
 Generate smart contract code that meets the following requirements:
- @dev Interface of the ERC777TokensSender standard as defined in the EIP. {IERC777} Token holders can be notified of operations performed on their tokens by having a contract implement this interface (contract holders can be their own implementer) and registering it on the https://eips.ethereum.org/EIPS/eip-1820[ERC1820 global registry]. See {IERC1820Registry} and {IERC1820Implementer}.
- @dev Called by an {IERC777} token contract whenever a registered holder's (`from`) tokens are about to be moved or destroyed. The type of operation is conveyed by `to` being the zero address or not. This call occurs _before_ the token contract's state is updated, so {IERC777-balanceOf}, etc., can be used to query the pre-operation state. This function may revert to prevent the operation from being executed.
+Programming with solidity ^ version number 0.8.20
+Implement the interface contract called IERC777Sender, which defines a function to send a transfer of ERC777 tokens.
+The following function needs to be completed with the following function name and function:
+tokensToSend: This function is used to send the transfer of ERC777 tokens. It accepts six parameters: operator: the address where the transfer is to be performed. from: the original address where the tokens are to be transferred to. to: the destination address where the tokens are to be transferred to. amount: the number of tokens to be transferred. userData: additional user data. operatorData: additional operator data. This function has no return value, it is called to perform some specific logic to handle the token transfer to be sent.
 Please give the contract code

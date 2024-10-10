@@ -1,14 +1,17 @@
 Generate smart contract code that meets the following requirements:
- @dev These functions deal with verification of Merkle Tree proofs. The tree and the proofs can be generated using our https://github.com/OpenZeppelin/merkle-tree[JavaScript library]. You will find a quickstart guide in the readme. WARNING: You should avoid using leaf values that are 64 bytes long prior to hashing, or use a hash function other than keccak256 for hashing leaves. This is because the concatenation of a sorted pair of internal nodes in the Merkle tree could be reinterpreted as a leaf value. OpenZeppelin's JavaScript library generates Merkle trees that are safe against this attack out of the box.
-@dev The multiproof provided is not valid.
- @dev Returns true if a `leaf` can be proved to be a part of a Merkle tree defined by `root`. For this, a `proof` must be provided, containing sibling hashes on the branch from the leaf to the root of the tree. Each pair of leaves and each pair of pre-images are assumed to be sorted.
- @dev Calldata version of {verify}
- @dev Returns the rebuilt hash obtained by traversing a Merkle tree up from `leaf` using `proof`. A `proof` is valid if and only if the rebuilt hash matches the root of the tree. When processing the proof, the pairs of leafs & pre-images are assumed to be sorted.
- @dev Calldata version of {processProof}
- @dev Returns true if the `leaves` can be simultaneously proven to be a part of a Merkle tree defined by `root`, according to `proof` and `proofFlags` as described in {processMultiProof}. CAUTION: Not all Merkle trees admit multiproofs. See {processMultiProof} for details.
- @dev Calldata version of {multiProofVerify} CAUTION: Not all Merkle trees admit multiproofs. See {processMultiProof} for details.
- @dev Returns the root of a tree reconstructed from `leaves` and sibling nodes in `proof`. The reconstruction proceeds by incrementally reconstructing all inner nodes by combining a leaf/inner node with either another leaf/inner node or a proof sibling node, depending on whether each `proofFlags` item is true or false respectively. CAUTION: Not all Merkle trees admit multiproofs. To use multiproofs, it is sufficient to ensure that: 1) the tree is complete (but not necessarily perfect), 2) the leaves to be proven are in the opposite order they are in the tree (i.e., as seen from right to left starting at the deepest layer and continuing at the next layer).
- @dev Calldata version of {processMultiProof}. CAUTION: Not all Merkle trees admit multiproofs. See {processMultiProof} for details.
- @dev Sorts the pair (a, b) and hashes the result.
- @dev Implementation of keccak256(abi.encode(a, b)) that doesn't allocate or expand memory.
+Programming with solidity ^ version number 0.8.20
+Implement the library called MerkleProof, which provides some functionality for verifying Merkle proofs.
+Description of the error types to be implemented
+MerkleProofInvalidMultiproof: this error type indicates that the multiproof is invalid.
+Description of functions to be implemented
+verify: This function is used to verify a given Merkle proof. It accepts an array of Merkle proofs, a root hash and a leaf node hash as arguments and returns a boolean value indicating the result of the verification.
+verifyCalldata: This function is used to verify a given Merkle proof (using calldata). It accepts an array of Merkel proofs, root hash and leaf node hash as arguments and returns a boolean value indicating the result of the verification.
+processProof: This function is used to process the Merkel proof and compute the root hash. It accepts an array of Merkel proofs and leaf node hashes as arguments and returns a value of type bytes32 indicating the calculated root hash.
+processProofCalldata: This function is used to process the Merkle proof and compute the root hash (using calldata). It accepts an array of Merkle proofs and leaf node hashes as arguments and returns a value of type bytes32 representing the computed root hash.
+multiProofVerify: This function is used to verify a given multiple Merkel proof. It accepts an array of Merkel proofs, an array of proof flags, an array of root hashes and leaf node hashes as arguments and returns a boolean value representing the result of the verification.
+multiProofVerifyCalldata: This function is used to verify a given multiple Merkel proof (using calldata). It accepts an array of Merkel proofs, an array of proof flags, an array of root hashes and leaf node hashes as arguments and returns a Boolean value indicating the result of the verification.
+processMultiProof: This function is used to process multiple Merkel proofs and compute the root hash. It accepts an array of Merkel proofs, an array of proof flags, and an array of leaf node hashes as arguments and returns a value of type bytes32 indicating the calculated root hash.
+processMultiProofCalldata: This function is used to process multiple Merkel proofs and compute the root hash (using calldata). It accepts an array of Merkle proofs, an array of proof flags, and an array of leaf node hashes as arguments, and returns a value of type bytes32 representing the computed root hash.
+_hashPair: This function is used to compute the combined hash of two hashes. It accepts two values of type bytes32 as arguments and returns a value of type bytes32 representing the calculated combined hash.
+_efficientHash: This function is used to compute the combined hash of two hashes (the efficient way). It accepts two values of type bytes32 as arguments and returns a value of type bytes32 indicating the calculated combined hash.
 Please give the contract code

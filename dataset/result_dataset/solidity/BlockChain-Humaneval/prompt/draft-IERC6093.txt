@@ -1,26 +1,34 @@
 Generate smart contract code that meets the following requirements:
- @dev Standard ERC20 Errors Interface of the https://eips.ethereum.org/EIPS/eip-6093[ERC-6093] custom errors for ERC20 tokens.
- @dev Indicates an error related to the current `balance` of a `sender`. Used in transfers. @param sender Address whose tokens are being transferred. @param balance Current balance for the interacting account. @param needed Minimum amount required to perform a transfer.
- @dev Indicates a failure with the token `sender`. Used in transfers. @param sender Address whose tokens are being transferred.
- @dev Indicates a failure with the token `receiver`. Used in transfers. @param receiver Address to which tokens are being transferred.
- @dev Indicates a failure with the `spender`’s `allowance`. Used in transfers. @param spender Address that may be allowed to operate on tokens without being their owner. @param allowance Amount of tokens a `spender` is allowed to operate with. @param needed Minimum amount required to perform a transfer.
- @dev Indicates a failure with the `approver` of a token to be approved. Used in approvals. @param approver Address initiating an approval operation.
- @dev Indicates a failure with the `spender` to be approved. Used in approvals. @param spender Address that may be allowed to operate on tokens without being their owner.
- @dev Standard ERC721 Errors Interface of the https://eips.ethereum.org/EIPS/eip-6093[ERC-6093] custom errors for ERC721 tokens.
- @dev Indicates that an address can't be an owner. For example, `address(0)` is a forbidden owner in EIP-20. Used in balance queries. @param owner Address of the current owner of a token.
- @dev Indicates a `tokenId` whose `owner` is the zero address. @param tokenId Identifier number of a token.
- @dev Indicates an error related to the ownership over a particular token. Used in transfers. @param sender Address whose tokens are being transferred. @param tokenId Identifier number of a token. @param owner Address of the current owner of a token.
- @dev Indicates a failure with the token `sender`. Used in transfers. @param sender Address whose tokens are being transferred.
- @dev Indicates a failure with the token `receiver`. Used in transfers. @param receiver Address to which tokens are being transferred.
- @dev Indicates a failure with the `operator`’s approval. Used in transfers. @param operator Address that may be allowed to operate on tokens without being their owner. @param tokenId Identifier number of a token.
- @dev Indicates a failure with the `approver` of a token to be approved. Used in approvals. @param approver Address initiating an approval operation.
- @dev Indicates a failure with the `operator` to be approved. Used in approvals. @param operator Address that may be allowed to operate on tokens without being their owner.
- @dev Standard ERC1155 Errors Interface of the https://eips.ethereum.org/EIPS/eip-6093[ERC-6093] custom errors for ERC1155 tokens.
- @dev Indicates an error related to the current `balance` of a `sender`. Used in transfers. @param sender Address whose tokens are being transferred. @param balance Current balance for the interacting account. @param needed Minimum amount required to perform a transfer. @param tokenId Identifier number of a token.
- @dev Indicates a failure with the token `sender`. Used in transfers. @param sender Address whose tokens are being transferred.
- @dev Indicates a failure with the token `receiver`. Used in transfers. @param receiver Address to which tokens are being transferred.
- @dev Indicates a failure with the `operator`’s approval. Used in transfers. @param operator Address that may be allowed to operate on tokens without being their owner. @param owner Address of the current owner of a token.
- @dev Indicates a failure with the `approver` of a token to be approved. Used in approvals. @param approver Address initiating an approval operation.
- @dev Indicates a failure with the `operator` to be approved. Used in approvals. @param operator Address that may be allowed to operate on tokens without being their owner.
- @dev Indicates an array length mismatch between ids and values in a safeBatchTransferFrom operation. Used in batch transfers. @param idsLength Length of the array of token identifiers @param valuesLength Length of the array of token amounts
+Programming with solidity ^ version number 0.8.20
+Implement three interface contracts named IERC20Errors, IERC721Errors and IERC1155Errors
+Description of the IERC20Errors interface
+This interface defines some of the error types associated with ERC20 tokens.
+Error type descriptions
+ERC20InsufficientBalance: This error type indicates that the sender's balance is insufficient to perform the transfer operation.
+ERC20InvalidSender: This error type indicates that the sender is invalid.
+ERC20InvalidReceiver: This error type indicates that the receiver is invalid.
+ERC20InsufficientAllowance: This error type indicates that the authorization amount is insufficient to perform the transfer.
+ERC20InvalidApprover: This error type indicates that the authorizer is invalid.
+ERC20InvalidSpender: This error type indicates that the recipient of the transfer is invalid.
+IERC721Errors Interface Description
+This interface defines some of the error types associated with ERC721 tokens.
+Error Type Description
+ERC721InvalidOwner: This error type indicates that the owner is invalid.
+ERC721NonexistentToken: This error type indicates a non-existent token.
+ERC721IncorrectOwner: This error type indicates that the sender is not the correct owner of the token.
+ERC721InvalidSender: This error type indicates that the sender is invalid.
+ERC721InvalidReceiver: This error type indicates that the receiver is invalid.
+ERC721InsufficientApproval: This error type indicates that the operator does not have sufficient authorization to perform the operation.
+ERC721InvalidApprover: This error type indicates that the authorizer is invalid.
+ERC721InvalidOperator: This error type indicates that the operator is invalid.
+IERC1155Errors Interface Description
+This interface defines some of the error types associated with ERC1155 tokens.
+Error Type Description
+ERC1155InsufficientBalance: This error type indicates that the sender's balance is insufficient to perform the transfer.
+ERC1155InvalidSender: This error type indicates that the sender is invalid.
+ERC1155InvalidReceiver: This error type indicates that the receiver is invalid.
+ERC1155MissingApprovalForAll: This error type indicates that the operator does not have sufficient authorization for all tokens.
+ERC1155InvalidApprover: This error type indicates that the authorizer is invalid.
+ERC1155InvalidOperator: This error type indicates that the operator is invalid.
+ERC1155InvalidArrayLength: This error type indicates an invalid array length.
 Please give the contract code

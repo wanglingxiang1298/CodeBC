@@ -1,7 +1,9 @@
 Generate smart contract code that meets the following requirements:
- @dev Standard signed math utilities missing in the Solidity language.
- @dev Returns the largest of two signed numbers.
- @dev Returns the smallest of two signed numbers.
- @dev Returns the average of two signed numbers without overflow. The result is rounded towards zero.
- @dev Returns the absolute unsigned value of a signed value.
+Programming with solidity ^ version number 0.8.20
+Implement the library called SignedMath, which provides some math functions for working with signed integers.
+The following functions need to be implemented. The function names and functions are listed below:
+max: This function returns the greater of two signed integers.
+min: This function returns the smaller of two signed integers.
+average: This function is used to return the average of two signed integers.
+abs: This function returns the absolute value of a signed integer.
 Please give the contract code

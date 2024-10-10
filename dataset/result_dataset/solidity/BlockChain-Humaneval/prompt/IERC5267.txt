@@ -1,4 +1,15 @@
 Generate smart contract code that meets the following requirements:
- @dev MAY be emitted to signal that the domain could have changed.
- @dev returns the fields and values that describe the domain separator used by this contract for EIP-712 signature.
+Programming with solidity ^ version number 0.8.20
+Implement the interface contract called IERC5267, which defines an event and a function to manage the EIP712 domain and related information.
+Description of the event to be accomplished
+EIP712DomainChanged: This event is triggered when the EIP712 domain changes.
+Description of the function that needs to be completed
+eip712Domaines: This function is used to get information about an EIP712 domain. It returns a tuple with multiple values including:
+fields: fields of the domain.
+name: The name of the domain.
+version: The version of the domain.
+chainId: The chain ID of the domain.
+verifyingContract: The address of the verifying contract for the field.
+salt: The salt value of the field.
+extensions: The extensions of the domain.
 Please give the contract code

@@ -1,4 +1,7 @@
 Generate smart contract code that meets the following requirements:
- @dev Clock used for flagging checkpoints. Can be overridden to implement timestamp based checkpoints (and voting).
- @dev Description of the clock
+Programming with solidity ^ version number 0.8.20
+Implement the interface contract called IERC6372, which defines two functions to get information about the clock and clock mode.
+The following functions need to be completed, the function names and functions are as follows:
+clock: This function is used to get the value of the clock. It returns a value of type uint48 indicating the current clock value.
+CLOCK_MODE: This function is used to get the clock mode. It returns a value of type string, indicating the current clock mode.
 Please give the contract code

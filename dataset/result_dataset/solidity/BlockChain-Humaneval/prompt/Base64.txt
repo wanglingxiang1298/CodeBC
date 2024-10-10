@@ -1,6 +1,6 @@
 Generate smart contract code that meets the following requirements:
- @dev Provides a set of functions to operate with Base64 strings.
- @dev Base64 Encoding/Decoding Table
- @dev Converts a `bytes` to its Bytes64 `string` representation.
- Inspired by Brecht Devos (Brechtpd) implementation - MIT licence https://github.com/Brechtpd/base64/blob/e78d9fd951e7b0977ddca77d92dc85183770daf4/base64.sol
+Programming with solidity ^ version number 0.8.20
+Implement a library called Base64 for encoding byte arrays into Base64 strings.
+The following functions are required, with names and functions as follows:
+encode: Encodes an array of bytes into a Base64 string.
 Please give the contract code

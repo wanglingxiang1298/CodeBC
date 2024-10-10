@@ -1,7 +1,12 @@
 Generate smart contract code that meets the following requirements:
- @dev Provides tracking nonces for addresses. Nonces will only increment.
- @dev The nonce used for an `account` is not the expected current nonce.
- @dev Returns the next unused nonce for an address.
- @dev Consumes a nonce. Returns the current value and increments nonce.
- @dev Same as {_useNonce} but checking that `nonce` is the next valid for `owner`.
+Programming with solidity ^ version number 0.8.20
+Implement an abstract contract called Nonces, which provides some functionality for managing account nonces.
+Description of the error types to be implemented
+InvalidAccountNonce: This error type indicates that the account nonce is invalid.
+Description of mappings to be implemented
+mapping: This mapping is used to store the nonce values for each account.
+Required Functions
+nonces: This function is used to get the nonce value for the specified account.
+_useNonce: This function is used to use the account's nonce value and return the new nonce value.
+_useCheckedNonce: This function is used to use the account's nonce value and check if the given nonce matches the current nonce. If it does not match, an InvalidAccountNonce error is triggered.
 Please give the contract code
