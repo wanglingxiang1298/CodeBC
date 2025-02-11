@@ -4,7 +4,7 @@ CodeBC: A More Secure Large Language Model for Smart Contract Code Generation in
 
   This project temporarily opens the training dataset, test dataset, and generated results, and we will follow up by disclosing our model parameters
 
-### demo
+### Demo
 
 
 
@@ -46,7 +46,7 @@ The performance of the CodeLlama model on the 'Address' task is shown in the fig
 1. Functions that should be declared as internal are mistakenly declared as public, which could affect access control and data integrity.
 2. The contract uses a direct, complete rollback strategy to handle errors, unlike the target code, which applies different rollback strategies based on return results. This approach may cause irreversible operations, preventing the previous state from being restored, and could make the system vulnerable to denial-of-service attacks.
 3. The `functionCall()` function is incorrectly declared as a public view function. While it should allow only read operations, the statement `target.call(data)` inside the function modifies the state, which prevents the contract from compiling.
-![img 2](https://github.com/wanglingxiang1298/CodeBC/blob/master/pic/basemodel_result_page-0001.jpg)
+![img 2](https://github.com/wanglingxiang1298/CodeBC/blob/master/pic/basemodel-result_page-0001.jpg)
 
 The performance of the CodeBC-CI model on the 'Address' task is shown in the figure. The results show slight differences in function implementations, but overall functionality remains the same.
 Function declarations have been improved, with all functions now correctly declared as internal. However, the rollback strategy has not been improved. Additionally, the `functionCall()` function incorrectly declares a return type of `bytes memory` but returns a `bool` from `target.call(data)`, causing the code to fail to compile.
